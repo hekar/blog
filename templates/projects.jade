@@ -1,0 +1,21 @@
+extends layout
+
+block append header
+  div.nav
+    a(href='/index.html') « Blog
+
+block content
+  section.content
+    !=contents['projects.md'].html
+
+block prepend footer
+  div.nav
+    if prevPage
+      a(href=prevPage.url) « Newer
+    else
+      a(href='/index.html') « Home
+      a(href='/archive.html') « Archives
+    if nextPage
+      a(href=nextPage.url) Next page »
+
+
