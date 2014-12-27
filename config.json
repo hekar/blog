@@ -1,6 +1,6 @@
 {
   "locals": {
-    "url": "http://localhost:8080",
+    "url": "http://hekar.github.io/blog",
     "name": "Mov r16, 0x00",
     "owner": "Hekar Khani",
     "description": "Simple byte movements posturing as complex systems"

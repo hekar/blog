@@ -2,7 +2,7 @@ extends layout
 
 block append header
   div.nav
-    a(href='/projects.html') Projects »
+    a(href=locals.url + '/projects.html') Projects »
 
 block content
   include author
@@ -12,20 +12,20 @@ block content
         p.date
           span= moment.utc(article.date).format('DD. MMMM YYYY')
         h2
-          a(href=article.url)= article.title
+          a(href=locals.url + article.url)= article.title
       section.content
         if article.intro.length > 0
           | !{ typogr(article.intro).typogrify() }
         if article.hasMore
           p.more
-            a(href=article.url) more
+            a(href=locals.url + article.url) more
 
 block prepend footer
   div.nav
     if prevPage
       a(href=prevPage.url) « Newer
     else
-      a(href='/archive.html') Archives »
+      a(href=locals.url + '/archive.html') Archives »
     if nextPage
       a(href=nextPage.url) Previous »
 

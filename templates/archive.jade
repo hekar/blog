@@ -29,6 +29,6 @@ block content
 								ul(style='margin-left:7em')
 									each item in months[monthsK[month]]
 										li(style='height:'+ lineHeight + 'em;line-height:'+ lineHeight + 'em;')
-											a(href=item.url)=item.title
+											a(href=locals.url + item.url)=item.title
 						- }
 						
