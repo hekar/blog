@@ -5,7 +5,7 @@ date: 2013-7-30
 template: article.jade
 ---
 
-Linux users complain a lot about their desktop environments. Gnome, KDE, Xfce, LXDE  etc. But that's not nearly the biggest issue on the Linux desktop.</p>
+Linux users complain a lot about their desktop environments. Gnome, KDE, Xfce, LXDE  etc. But that's not nearly the biggest issue on the Linux desktop.
 
 The biggest issue is the complexity of packaging software and the shear manpower required to create a distribution.
 
