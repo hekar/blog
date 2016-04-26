@@ -1,9 +1,9 @@
 {
   "locals": {
     "url": "http://hekar.github.io/blog",
-    "name": "Mov r16, 0x00",
+    "name": "Hekarblog",
     "owner": "Hekar Khani",
-    "description": "Simple byte movements posturing as complex systems"
+    "description": "Software Development and Linux"
   },
   "plugins": [
     "./plugins/paginator.coffee"
