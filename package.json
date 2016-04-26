@@ -1,8 +1,16 @@
 {
+  "scripts": {
+    "build": "./node_modules/.bin/wintersmith build",
+    "preview": "./node_modules/.bin/wintersmith preview"
+  },
   "dependencies": {
     "moment": "2.3.x",
-    "underscore": "1.4.x",
-    "typogr": "0.5.x"
+    "typogr": "0.5.x",
+    "underscore": "1.4.x"
+  },
+  "devDependencies": {
+    "wintersmith-livereload": "^0.2.2",
+    "wintersmith": "^2.3.1"
   },
   "repository": "none"
 }
