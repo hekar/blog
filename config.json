@@ -21,6 +21,7 @@
     "smartypants": true
   },
   "paginator": {
-    "perPage": 10
+    "perPage": 10,
+    "filename": "page/%d.html"
   }
 }
