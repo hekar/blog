@@ -18,7 +18,7 @@ we have come to focus on the following:
 * Time to save other's time, by reviewing your own code first
 * Do not be on the offensive or defensive
 * Ask questions
-* Avoid the condescending "why didn't you _just_ \_\_\_\_?"
+* Avoid the condescending "why didn't you _just_...?"
 * Try to add references (ie. external documentation, studies, etc)
 
 Part of this is because we have been following the ideas found in the video
