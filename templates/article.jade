@@ -9,7 +9,13 @@ block prepend title
 
 block header
   include author
-  h1= page.title
+  div.logo
+    h1
+      a(href=locals.url + '/index.html')= locals.name
+    p.description= locals.description
+  hr
+  h1.article-title
+    a(href=locals.url + '/index.html')= page.title
   p.author
     | #{ "Written by " }
     mixin author(page.metadata.author)
@@ -20,4 +26,4 @@ block content
 
 block prepend footer
   div.nav
-    a(href=locals.url + '/index.html') « Full blog
+    a(href=locals.url + '/index.html') « Home

@@ -116,7 +116,7 @@ hr {
   margin-top: -0.3em;
 }
 
-body.article-detail > header h1 {
+h1.article-title {
   font-size: 2.5em;
   font-weight: 400;
   margin-bottom: -0.2em;
@@ -418,4 +418,3 @@ code.lang-markdown .bullet {
     margin-bottom: 1em;
   }
 }
-
