@@ -12,7 +12,7 @@ Without realising it, we had already been following practices outlined in this v
 
 <span class="more"></span>
 
-While these aren't rules and are more akin to guideline or principles, we have come to focus on the following:
+While these aren't rules and are more akin to guidelines or principles. Our team has come to focus on the following:
 * Save other's time, by reviewing your own code first
 * Do not be on the offensive or defensive
 * Ask questions
@@ -32,5 +32,4 @@ The team should have a culture of being "nice". Having a "superstar" cast of dev
 Of course, this does not mean individuals need not be talented and willing to learn, both at work and
 during their time outside of work. There is a degree of skill and grit required to produce the quality of software demanded by today's consumers. However, code reviews and being generally pleasurable are
 key assets. They contribute to quality just as much as technical abilities. Every developer has his or her own method
-of practicing their technical skills, but many fall into neglecting their soft skills.
-Soft skills which are essential to making or breaking great teams and ultimately making or breaking great companies.
+of practicing their technical skills, but they sometimes choose to ignore learning other practices that may be beneficial in their workplace. Sometimes it's useful to take a step back and work on improving daily tasks that may seem mundane, but are actually important to quality.
