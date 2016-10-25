@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "./node_modules/.bin/wintersmith build",
-    "preview": "./node_modules/.bin/wintersmith preview"
+    "preview": "./node_modules/.bin/wintersmith preview",
+    "gh-pages": "git checkout . && npm run build && git checkout gh-pages && rsync -av build/*/ ./"
   },
   "dependencies": {
     "moment": "2.3.x",
