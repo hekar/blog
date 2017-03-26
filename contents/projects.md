@@ -1,7 +1,3 @@
----
-view: none
----
-
 These are some of the projects that I have worked on.
 Nearly all of my current projects are proprietary. Eventually, they will end up on this page.
 

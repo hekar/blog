@@ -3,6 +3,7 @@ title: "Linux Complaints and Mass Market"
 author: Hekar Khani
 date: 2013-7-30
 template: article.jade
+tag: linux.io
 ---
 
 Linux users complain a lot about their desktop environments. Gnome, KDE, Xfce, LXDE  etc. But that's not nearly the biggest issue on the Linux desktop.

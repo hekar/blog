@@ -3,6 +3,7 @@ title: "Building Zero-K Lobby on Linux"
 author: Hekar Khani
 date: 2013-11-24
 template: article.jade
+tag: gamesonlinux.io
 ---
 
 Though, I am no longer an avid video game player I happened to come across a real-time strategy game a few months ago. The game is called Zero-K, is freely avaliable and open source. While the game runs very well under Windows, I have experienced quite a few issues under Linux.  

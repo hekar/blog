@@ -3,6 +3,7 @@ title: "Play 2.0 with Intellij"
 author: Hekar Khani
 date: 2012-6-25
 template: article.jade
+tag: scala.io
 ---
 
 After upgrading to Windows 8, I noticed some stability issues with [Eclipse Juno](http://www.eclipse.org/juno/). Many of the problems were so bad that they made Juno completely unusable on my installation.

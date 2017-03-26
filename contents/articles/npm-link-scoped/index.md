@@ -3,6 +3,7 @@ title: "Scoped Packages with npm-link"
 author: Hekar Khani
 date: 2016-4-25
 template: article.jade
+tag: nodejs.io
 ---
 
 In the past few months, I have noticed that `npm link` and scoped packages have gone underused by my colleagues.

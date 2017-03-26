@@ -2,19 +2,18 @@ extends layout
 
 block append header
   div.nav
-    a(href=locals.url + '/index.html') « Blog
+    a(href=locals.url + '/') Posts | 
+    a(href=locals.url + '/archive.html') Archives | 
+    a(href='https://www.linkedin.com/in/hekarkhani/') LinkedIn | 
+    a(href='http://github.com/hekar') Github
 
 block content
-  section.content
+  section.projects
     !=contents['projects.md'].html
 
 block prepend footer
   div.nav
     if prevPage
-      a(href=prevPage.url) « Newer
-    else
-      a(href=locals.url + '/archive.html') « Archives
+      a(href=prevPage.url) Less
     if nextPage
-      a(href=nextPage.url) Next page »
-
-
+      a(href=nextPage.url) More

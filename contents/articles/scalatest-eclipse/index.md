@@ -3,6 +3,7 @@ title: "ScalaTest Eclipse"
 author: Hekar Khani
 date: 2013-10-25
 template: article.jade
+tag: scala.io
 ---
 
 I tried the ScalaTest plugin Eclipse, but I couldn't get them working with my version of ScalaTest. Fortunately, there's an alternative: JUnit runners.

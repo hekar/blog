@@ -1,9 +1,9 @@
 {
   "locals": {
     "url": "http://hekar.github.io/blog",
-    "name": "Hekar's Blog",
+    "name": "Heckar News",
     "owner": "Hekar Khani",
-    "description": "Software Development and Linux"
+    "description": "Linux and Software Development"
   },
   "plugins": [
     "./plugins/paginator.coffee"

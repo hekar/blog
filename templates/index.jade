@@ -2,29 +2,33 @@ extends layout
 
 block append header
   div.nav
-    a(href=locals.url + '/projects.html') Projects »
+    a(href=locals.url + '/projects.html') Projects | 
+    a(href=locals.url + '/archive.html') Archives | 
+    a(href='https://www.linkedin.com/in/hekarkhani/') LinkedIn | 
+    a(href='http://github.com/hekar') Github
 
 block content
-  include author
+  - var i = 0
   each article in articles
+    - i += 1
     article.article.intro
       header
-        p.date
-          span= moment.utc(article.date).format('DD. MMMM YYYY')
-        h2
-          a(href=locals.url + article.url)= article.title
+        h3
+          a(href=locals.url + article.url)= i + '. ' + article.title
+          a.tag= ' (' + article.metadata.tag + ')'
       section.content
         if article.intro.length > 0
           | !{ typogr(article.intro).typogrify() }
-        if article.hasMore
-          p.more
-            a(href=locals.url + article.url) more
+      p.meta
+        a(href=locals.url + '/author.html')= article.metadata.author +' | '
+        span= moment.utc(article.date).fromNow()
+        span &nbsp;|&nbsp;
+        a(href=locals.url + article.url) more
+  include author
 
 block prepend footer
   div.nav
     if prevPage
-      a(href=prevPage.url) « Newer
-    else
-      a(href=locals.url + '/archive.html') Archives »
+      a(href=prevPage.url) Less
     if nextPage
-      a(href=locals.url + nextPage.url) Previous »
+      a(href=locals.url + nextPage.url) More

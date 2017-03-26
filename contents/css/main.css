@@ -1,273 +1,166 @@
-
-h1, h2, h3, h4, h5, h6, p, body, a, img, ul, ol, blockquote, pre {
+h1, h2, h3, h4, h5, h6, p, body, a, img, blockquote, pre {
   margin: 0; padding: 0; border: 0;
 }
 
 body {
-  font-family: 'Source Sans Pro', serif;
+  font-family: Verdana, Geneva, sans-serif;
   font-size: 21px;
   line-height: 1.52;
   background-color: #f8f8f8;
   text-rendering: optimizeLegibility;
-}
-
-.content-wrap {
-  width: 34em;
-  margin: 0 auto;
+  padding: 1% 5%;
 }
 
 body, a {
-  color: #171717;
+  color: #000;
+}
+
+a, a:hover {
+  text-decoration: none;
 }
 
 a:hover {
-  color: #ff8000;
-  text-decoration: underline;
+  cursor: pointer;
 }
-
-p {
-  margin-bottom: 1.52em;
-}
-
-pre {
-  font-size: 0.9em;
-  overflow: auto;
-  background: #fff;
-  border: 1px dashed #d2d2d2;
-  border-radius: 0.25em;
-  margin-bottom: 1.8em;
-  padding: 1em;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-h2 {
-  font-size: 1.2em;
-  line-height: 1.43;
-}
-
-h3 {
-  font-size: 1.4em;
-  margin-top: 1.8em;
-}
-
-ol, ul {
-  margin: 0 1.4em 1.4em 1.4em;
-}
-
-li {
-  margin-bottom: 0.5em;
-}
-
-blockquote {
-  margin: 1.2em 3em;
-  padding-left: 1em;
-}
-
-hr {
-  border: 0;
-  border-top: 1px dashed #d2d2d2;
-  height: 0;
-  margin: 1.6em 0;
-}
-
-/* page header */
 
 .header {
-  margin: 3em 0 0 0;
+  background-color: #ff6600;
 }
 
-.header h1 {
-  font-size: 2.6em;
-  font-weight: 700;
-  margin: 0;
+.header .logo {
+  background-image: url(../img/y18.gif);
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid white;
+  margin: auto;
+  margin: 4px;
 }
 
-.header a, .header a:hover {
-  text-decoration: none;
+.header .logo,
+.header .title {
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.header .logo a:hover {
-  color: #171717;
-}
-
-.header .author {
-  font-family: 'Source Sans Pro', serif;
-  font-variant: small-caps;
-  text-transform: lowercase;
-  text-rendering: auto;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-
-.header .description {
-  font-size: 1.2em;
-  margin-top: -0.3em;
-}
-
-h1.article-title {
-  font-size: 2.5em;
-  font-weight: 400;
-  margin-bottom: -0.2em;
-}
-
-body.article-detail > header {
-  margin-bottom: 3em;
-}
-
-/* page footer */
-
-footer {
-  margin: 3em 0;
-}
-
-.header .nav, footer .nav {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-.header .nav a, footer .nav a {
-  padding: 0 0.5em;
-  font-size: 1.2em;
-  text-decoration: none;
-}
-
-footer .about {
-  border-top: 1px dashed #d2d2d2;
-  padding: 2.2em 3em;
-  font-size: 0.95em;
-}
-
-footer .copy {
-  font-size: 0.8em;
-  margin-top: 1em;
-}
-
-footer .copy, footer .copy a {
-  color: #8e8e8e;
-}
-
-/* article */
-
-.article {
-  margin: 3em 0 4em;
-}
-
-.article header {
-  border-top: 1px dashed #d2d2d2;
-}
-
-.article header h2 {
-  font-weight: 400;
-  margin: 0.8em 0;
-  font-size: 1.4em;
-}
-
-.article header h2 a {
-  text-decoration: none;
-}
-
-.article header .date {
-  font-size: 0.8em;
-  margin-top: -0.7em;
-}
-
-.article header .date span {
-  background-color: #f8f8f8;
-  padding: 0 0.7em;
-}
-
-.article.intro .content p {
+.header .nav {
+  margin-left: 5px;
   display: inline;
+  vertical-align: middle;  
 }
 
-.article.intro .content .more {
-  text-decoration: underline;
-  font-weight: 700;
-  padding-left: 0.3em;
+#content .description {
+  margin-top: 24px;
 }
 
-.article .content img {
-  display: block;
-  width: 100%;
+.article.full {
+  margin: 24px 0;
 }
 
-.more, .date {
-  font-family: 'Source Sans Pro', serif;
-  font-variant: small-caps;
-  text-transform: lowercase;
-  font-weight: 400;
-  text-rendering: auto;
-  letter-spacing: 1px;
+.article.full pre code {
+  background-color: #737477;
+  color: #eee;
+  padding: 24px 12px;
 }
 
-/* archive */
+.article.full p,
+.article.full pre {
+  margin: 12px 0;
+}
+
+.article.intro {
+  margin: 24px 0;
+}
+
+.article.intro .tag {
+  font-size: 1.15rem;
+  color: #828282;
+}
+
+.article.intro a:visited {
+  color: #828282
+}
+
+.article.intro a:visited {
+  color: #828282
+}
+
+.article.intro .content a {
+  color: #3e999f;
+}
+
+.article.intro .meta {
+  margin: 4px 0;
+}
+
+.article.intro .meta,
+.article.intro .meta a,
+.article.intro .meta a:hover,
+.article.intro .meta a:visited {
+  color: #828282;
+}
+
+.footer {
+  margin: 24px 0;
+}
+
+.footer a {
+  color: #828282;
+}
+
+.footer .copy {
+  text-align: center;
+  font-size: 1.15rem;
+}
 
 .archive {
-  width: 32em;
-  margin: 5em auto 6em;
-  padding-left: 2em;
+  margin: 24px 0;
 }
 
-.archive h2 {
-  font-size: 2em;
-  margin: 0;
-  margin-left: 6.1em;
-  margin-bottom: 0.5em;
+.archive .year {
+  font-size: 1.45rem;
+  font-weight: bold;
+  color: #828282;
 }
 
-.archive a, .archive span{
-  display: block;
-  float: left;
-  margin-bottom: -1px;
-  text-decoration: none;
-}
-.archive li:not(:last-child) {
-	border-bottom: 1px solid #d2d2d2;
-	margin-bottom: -1px;
+.archive .month {
+  color: #828282;
+  font-size: 1.35rem;
 }
 
-.archive a.last, .archive span.last {
-  border: 0;
-  margin-bottom: 0;
-}
-
-.archive a {
-  width: 21em;
-  text-indent: 1em;
-  white-space: nowrap;
-}
-
-.archive .year-label,
-.archive .month-label{
-  width: 4em;
-  font-family: 'Source Sans Pro', serif;
-  font-variant: small-caps;
-  text-transform: lowercase;
-  font-weight: 400;
-  text-rendering: auto;
-  letter-spacing: 1px;
-}
-
-.archive .month-label {
-  width: 7em;
+.archive .post-title {
+  font-size: 1.25rem;
 }
 
 .archive ul {
   list-style: none;
-  margin: 0;
 }
 
 .archive ul li {
-  margin: 0;
+  list-style: none;
+}
+
+.projects {
+  margin-top: 24px;
+}
+
+.projects h3 {
+  margin-top: 24px;
+}
+
+.projects h4 {
+  margin-top: 24px;
+}
+
+.projects a {
+  color: #828282;
 }
 
 /* code styling */
 
 code {
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Ubuntu Mono', monospace;
   font-size: 0.85em;
   color: #000;
 }
@@ -314,92 +207,34 @@ code.lang-markdown .bullet {
   color: #bbb;
 }
 
-/* Tomorrow Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-.tomorrow-comment, pre .comment, pre .title {
-  color: #8e908c;
-}
-
-.tomorrow-red, pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
-  color: #c82829;
-}
-
-.tomorrow-orange, pre .number, pre .preprocessor, pre .built_in, pre .literal, pre .params, pre .constant {
-  color: #f5871f;
-}
-
-.tomorrow-yellow, pre .class, pre .ruby .class .title, pre .css .rules .attribute {
-  color: #eab700;
-}
-
-.tomorrow-green, pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
-  color: #718c00;
-}
-
-.tomorrow-aqua, pre .css .hexcolor {
-  color: #3e999f;
-}
-
-.tomorrow-blue, pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
-  color: #4271ae;
-}
-
-.tomorrow-purple, pre .keyword, pre .javascript .function {
-  color: #8959a8;
-}
-
 /* media queries */
 
-@media (min-width: 1600px) {
-  body { font-size: 26px; }
-}
-
 @media (max-width: 900px) {
-  body { font-size: 18px; }
+  body {
+    font-size: 1.25rem;
+  }
 }
 
 @media (max-width: 690px) {
-  .content-wrap {
-    width: auto;
-    padding: 0 1em;
+  body {
+    font-size: 1.55rem;
   }
+
   .header {
-    margin: 1em 0;
+    margin: -1% -5%;
+    padding: 1% 5%;
   }
-  .header h1 {
-    font-size: 1.4em;
-    margin-bottom: 0.6em;
-  }
-  .header .description {
-    font-size: 1em;
-  }
-  .article {
-    margin: 1em 0 2.5em;
-  }
-  .archive {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .archive * {
-    float: none !important;
-    line-height: 1.6 !important;
-    width: auto !important;
-    height: auto !important;
-    text-align: left !important;
-    border: 0 !important;
-    margin: 0 !important;
-  }
-  footer .nav {
-    margin: 1em 0;
-  }
-  footer .about {
+
+  .archive ul {
+    list-style: none;
     padding: 0;
-    font-size: 0.9em;
-    padding-top: 1.6em;
   }
-  footer .about p {
-    margin-bottom: 1em;
+
+  .archive ul li {
+    margin-bottom: 12px;
+  }
+
+  .archive .post-title {
+    margin-left: 24px;
   }
 }

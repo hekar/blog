@@ -3,6 +3,7 @@ title: "Thinkpad T520 - OpenSUSE 13.2"
 author: Hekar Khani
 date: 2015-5-21
 template: article.jade
+tag: linux.io
 ---
 
 Getting a Thinkpad T520’s NVIDIA Quadro video card working with OpenSUSE 13.2 or other modern distributions does not have to be the hard.

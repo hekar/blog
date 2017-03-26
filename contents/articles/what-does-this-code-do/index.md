@@ -3,6 +3,7 @@ title: "What does this code do?"
 author: Hekar Khani
 date: 2013-8-12
 template: article.jade
+tag: java.io
 ---
 
 <script id="metamorph-175-start" type="text/x-placeholder"></script><p>As I've been learning Scala and Kotlin, I've been wondering why much of the code I've seen written in Kotlin and Scala have actually been easier to read than their respective Java counterparts. Even with [implicits](http://blog.joa-ebert.com/2010/12/26/understanding-scala-implicits/), the Scala code seemed to flow in a much more fluid fashion. More like a novel rather than a technical specification. 

@@ -3,6 +3,7 @@ title: "Windows 8 Review"
 author: Hekar Khani
 date: 2012-10-28
 template: article.jade
+tag: windows.io
 ---
 
 Been using Windows 8 for a little over 3 weeks now.

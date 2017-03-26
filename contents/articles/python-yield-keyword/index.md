@@ -3,6 +3,7 @@ title: "Python's Yield Keyword"
 author: Hekar Khani
 date: 2012-1-12
 template: article.jade
+tag: python.io
 ---
 
 One of my most missed features in Java is the yield keyword found in Python.

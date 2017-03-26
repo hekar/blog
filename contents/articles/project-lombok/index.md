@@ -3,6 +3,7 @@ title: "Project Lombok"
 author: Hekar Khani
 date: 2013-10-7
 template: article.jade
+tag: java.io
 ---
 
 I happened to come across [Project Lombok](http://projectlombok.org/), which is a library that adds many C#, among other features to Java. Included are "properties", the "using" statement, "structs", immutable structures, checked to uncheck exceptions, delegation, basic type inference, etc. These features are utilized via annotations and implemented as modifications to javac.

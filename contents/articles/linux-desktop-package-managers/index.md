@@ -3,6 +3,7 @@ title: "The Linux Desktop and Package Managers"
 author: Hekar Khani
 date: 2012-6-13
 template: article.jade
+tag: linux.io
 ---
 
 Server based Linux distributions are simply extraordinary. They're performant, reliable, fault tolerant and support a large variety of applications. Features of the operating systems are engineered to make sense for large scale deployments. Everything from the setup of the file system to the way services are handled makes sense for a server. Organizations rarely see limitations with their Linux distributions, instead they see a powerful and malleable operating system that suites the needs of modern networks and service architectures.
