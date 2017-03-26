@@ -22,6 +22,7 @@ module.exports = (env, callback) ->
     # skip articles that does not have a template associated
     articles = articles.filter (item) -> item.template isnt 'none'
     # sort article by date
+    articles.sort (a, b) -> b.date - a.date
     return articles
 
   class PaginatorPage extends env.plugins.Page
