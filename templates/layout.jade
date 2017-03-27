@@ -37,3 +37,10 @@ html(lang='en')
             p &mdash;
             a(href='') #{ locals.owner }
             p &copy; #{ new Date().getFullYear() }
+          p.nothackernews
+            span It's not 
+            a(href='https://news.ycombinator.com') Hacker News
+            span , it's
+            br
+            span(style='font-style:italic; font-weight: bold')= ' Heckar News'
+            span .
