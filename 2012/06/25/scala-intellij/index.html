@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Play 2.0 with Intellij | Hekar Khani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="After upgrading to Windows 8, I noticed some stability issues with Eclipse Juno. Many of the problems were so bad that they made Juno completely unusable on my installation. While downloading the olde">
+<meta name="keywords" content="scala">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Play 2.0 with Intellij">
+<meta property="og:url" content="https://hekar.github.io/blog/2012/06/25/scala-intellij/index.html">
+<meta property="og:site_name" content="Hekar Khani">
+<meta property="og:description" content="After upgrading to Windows 8, I noticed some stability issues with Eclipse Juno. Many of the problems were so bad that they made Juno completely unusable on my installation. While downloading the olde">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-17T20:13:03.324Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Play 2.0 with Intellij">
+<meta name="twitter:description" content="After upgrading to Windows 8, I noticed some stability issues with Eclipse Juno. Many of the problems were so bad that they made Juno completely unusable on my installation. While downloading the olde">
+  
+    <link rel="alternate" href="/blog/atom.xml" title="Hekar Khani" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/blog/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/blog/" id="logo">Hekar Khani</a>
+        <span id="subtitle">Mov instructions masquerading as complex systems</span>
+      </h1>
+      
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/blog/">Home</a>
+        
+          <a class="main-nav-link" href="/blog/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/blog/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://hekar.github.io/blog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-scala-intellij" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2012/06/25/scala-intellij/" class="article-date">
+  <time datetime="2012-06-25T04:00:00.000Z" itemprop="datePublished">2012-06-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/scala/">scala</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Play 2.0 with Intellij
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>After upgrading to Windows 8, I noticed some stability issues with <a href="http://www.eclipse.org/juno/" target="_blank" rel="noopener">Eclipse Juno</a>. Many of the problems were so bad that they made Juno completely unusable on my installation.</p>
+<p>While downloading the older version of <a href="http://www.eclipse.org/indigo/" target="_blank" rel="noopener">Eclipse (Indigo)</a>, I decided to also give <a href="http://www.jetbrains.com/idea/download/" target="_blank" rel="noopener">Idea Intelij</a>&nbsp;community edition a try.</p>
+<h2 id="Setup-the-project"><a href="#Setup-the-project" class="headerlink" title="Setup the project"></a>Setup the project</h2><p>Setting up the project is really easy with the “play” command.</p>
+<p>Simply add the play framework to your $PATH or %PATH% (as you probably already have) and type: <code>play idea</code><br>in your project folder. This should create an Intelij project that you can later import.</p>
+<h3 id="Download-Intelij"><a href="#Download-Intelij" class="headerlink" title="Download Intelij"></a>Download Intelij</h3><p>Download the community edition of Intelij from here:&nbsp;<a href="http://www.jetbrains.com/idea/download/" target="_blank" rel="noopener">http://www.jetbrains.com/idea/download/</a></p>
+<h2 id="Setup-Scala-Support"><a href="#Setup-Scala-Support" class="headerlink" title="Setup Scala Support"></a>Setup Scala Support</h2><h3 id="Scala-Plugin"><a href="#Scala-Plugin" class="headerlink" title="Scala Plugin"></a>Scala Plugin</h3><p>The Scala plugin can be installed by clicking&nbsp;<em>File-&gt;Settings-&gt;Plugins-&gt;”Browse Repositories…”.</em>&nbsp;After the installation of this plugin, everything should be ready for developing your Play 2.0 Scala application.</p>
+<h3 id="Play-2-0-Plugin-Not-recommended"><a href="#Play-2-0-Plugin-Not-recommended" class="headerlink" title="Play 2.0 Plugin (Not recommended)"></a>Play 2.0 Plugin (Not recommended)</h3><p>There is a Play 2.0 plugin for Intelij that has nightly builds here:</p>
+<p><a href="http://confluence.jetbrains.net/display/SCA/Play+2.0+plugin+Nightly+Builds+for+Leda" target="_blank" rel="noopener">http://confluence.jetbrains.net/display/SCA/Play+2.0+plugin+Nightly+Builds+for+Leda</a> </p>
+<p>It is still in the early stages of development.</p>
+<h2 id="What-I-noticed"><a href="#What-I-noticed" class="headerlink" title="What I noticed"></a>What I noticed</h2><p>I noticed the Scala support is very stable and auto complete works more often than not. The IDE seems a lot more cohesive and easier to use than Eclipse. The UI is well thought out.</p>
+<p>Performance on my desktop machine is where Intelij is not the best. I changed some of the theming options and disabled unneeded plugins. Fortunately that fixed many of the performance issues, but it’s not as fast as Eclipse Juno. This is not a big deal though, because the rest of the IDE makes up for it.</p>
+<p>Overall, I’m happy with Intelij and will begin to consider using it more often in other projects.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://hekar.github.io/blog/2012/06/25/scala-intellij/" data-id="cjzfzllvz000hh4uyqw9gpf8n" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/scala/">scala</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2012/10/28/windows-8-review/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Windows 8 Review
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog/2012/06/13/linux-desktop-package-managers/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">The Linux Desktop and Package Managers</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Hekar Khani<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/blog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+
+<script src="/blog/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

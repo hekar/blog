@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>QCon - No Moore Left to Give | Hekar Khani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="No Moore Left to Give: Enterprise Computing after Moore’s Law This post is based on a keynote presentation by Bryan Cantrill and is freely available on the InfoQ website.  Bryan Cantrill is one of my">
+<meta name="keywords" content="blog">
+<meta property="og:type" content="article">
+<meta property="og:title" content="QCon - No Moore Left to Give">
+<meta property="og:url" content="https://hekar.github.io/blog/2019/08/17/2019-08-14-qcon-no-moore/index.html">
+<meta property="og:site_name" content="Hekar Khani">
+<meta property="og:description" content="No Moore Left to Give: Enterprise Computing after Moore’s Law This post is based on a keynote presentation by Bryan Cantrill and is freely available on the InfoQ website.  Bryan Cantrill is one of my">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AmdahlsLaw.svg/1280px-AmdahlsLaw.svg.png">
+<meta property="og:updated_time" content="2019-08-17T21:02:05.689Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="QCon - No Moore Left to Give">
+<meta name="twitter:description" content="No Moore Left to Give: Enterprise Computing after Moore’s Law This post is based on a keynote presentation by Bryan Cantrill and is freely available on the InfoQ website.  Bryan Cantrill is one of my">
+<meta name="twitter:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AmdahlsLaw.svg/1280px-AmdahlsLaw.svg.png">
+  
+    <link rel="alternate" href="/blog/atom.xml" title="Hekar Khani" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/blog/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/blog/" id="logo">Hekar Khani</a>
+        <span id="subtitle">Mov instructions masquerading as complex systems</span>
+      </h1>
+      
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/blog/">Home</a>
+        
+          <a class="main-nav-link" href="/blog/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/blog/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://hekar.github.io/blog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-2019-08-14-qcon-no-moore" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2019/08/17/2019-08-14-qcon-no-moore/" class="article-date">
+  <time datetime="2019-08-17T20:33:16.558Z" itemprop="datePublished">2019-08-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      QCon - No Moore Left to Give
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p><a href="https://www.infoq.com/presentations/moore-law-expiring/" target="_blank" rel="noopener">No Moore Left to Give: Enterprise Computing after Moore’s Law</a></p>
+<p>This post is based on a <a href="https://www.infoq.com/qconnewyork2019/" target="_blank" rel="noopener">keynote presentation</a> by Bryan Cantrill and is <a href="https://www.infoq.com/presentations/moore-law-expiring/?itm_source=infoq&amp;itm_medium=popular_widget&amp;itm_campaign=popular_content_list&amp;itm_content=" target="_blank" rel="noopener">freely available on the InfoQ website.</a></p>
+</blockquote>
+<p><a href="https://www.youtube.com/results?search_query=bryan+cantrill" target="_blank" rel="noopener">Bryan Cantrill</a> is one of my favorite presenters, so I was excited to see that he’d be giving a keynote at QCon. For a long time, computer enthuasaists have been talking about the end of Moore’s law and what it means for computing. What Cantrill explains is that Moore’s law is close to ending, it’s not the end of the world, but developers aren’t going to get the “free” performance increases we’ve seen in the past.</p>
+<p>Bryan references three “laws” in his talk.</p>
+<p>The laws referenced are Dennard Scaling, Moore’s Law and Amdahl’s Law.</p>
+<p>What Bryan argues is that Moore’s Law is nearing its end and transistor sizes below 7nm are going to be more expensive and yield less benefits going forward. Programmers have become accustomed to computers becoming faster and cheaper every year, but this may no longer be the case.</p>
+<p>I will quickly go over the three laws referenced by Cantrill in his talk.</p>
+<h3 id="Dennard-Scaling"><a href="#Dennard-Scaling" class="headerlink" title="Dennard Scaling"></a>Dennard Scaling</h3><p>From Wikipedia: <a href="https://en.wikipedia.org/wiki/Dennard_scaling" target="_blank" rel="noopener">wiki/Dennard_scaling</a></p>
+<blockquote>
+<p>Dennard scaling, also known as MOSFET scaling, is a scaling law based on a 1974 paper co-authored by Robert H. Dennard, after whom it is named. Originally formulated for MOSFETs, it states, roughly, that as transistors get smaller, their power density stays constant, so that the power use stays in proportion with area; both voltage and current scale (downward) with length.</p>
+</blockquote>
+<p>Dennard scaling meant that processors could go faster simply by increasing the frequency. From 100Mhz to 2GHz to 3GHz and so on. Frequency increases broke down somewhere in 2005 - 2007, due to “current leakage” which caused increased chip heat and power consumption. Afterwards, chip manufacturers began adding additional cores, instead of optimizing for increased frequencies.</p>
+<h3 id="Moore’s-Law"><a href="#Moore’s-Law" class="headerlink" title="Moore’s Law"></a>Moore’s Law</h3><p>From Wikipedia: <a href="https://en.wikipedia.org/wiki/Moore%27s_law" target="_blank" rel="noopener">wiki/Moores_law</a></p>
+<blockquote>
+<p>Moore’s law is the observation that the number of transistors in a dense integrated circuit doubles about every two years. The observation is named after Gordon Moore, the co-founder of Fairchild Semiconductor and CEO of Intel, whose 1965 paper described a doubling every year in the number of components per integrated circuit, and projected this rate of growth would continue for at least another decade. In 1975 looking forward to the next decade, he revised the forecast to doubling every two years, a compound annual growth rate (CAGR) of 41.4%.</p>
+</blockquote>
+<p>Unlike Dennard’s Scaling, the definition of Moore’s Law has less of a consenus. People are still debating exactly what the law covers. Cantrill defines Moore’s Law a differently from the summary on Wikipedia. He uses references found in various interviews, articles and books to piece together what he thinks Moore’s Law means.</p>
+<p>From his <a href="https://www.slideshare.net/bcantrill/no-moore-left-to-give-enterprise-computing-after-moores-law" target="_blank" rel="noopener">slides</a></p>
+<blockquote>
+<p>“…for many years, Moore’s Law could be inferred to the doublings of density, speed and economics…”</p>
+</blockquote>
+<p>Moore’s Law accounts for more than the doubling of density, which could theoritically be achieved at the cost of economics (moving to a more expensive material) or speed.</p>
+<p>Cantrill argues that processors had become higher density, while also becoming cheaper for both manufacturers and consumers. This changed around 2015 when processors began becoming more expensive with each additional generation, even though transistor nodes had shrunk in size.</p>
+<h3 id="Amdahl’s-Law"><a href="#Amdahl’s-Law" class="headerlink" title="Amdahl’s Law"></a>Amdahl’s Law</h3><p>From Wikipedia: <a href="https://en.wikipedia.org/wiki/Amdahl%27s_law" target="_blank" rel="noopener">wiki/Amdahls_law</a></p>
+<blockquote>
+<p>In computer architecture, Amdahl’s law (or Amdahl’s argument[1]) is a formula which gives the theoretical speedup in latency of the execution of a task at fixed workload that can be expected of a system whose resources are improved. It is named after computer scientist Gene Amdahl, and was presented at the AFIPS Spring Joint Computer Conference in 1967.</p>
+</blockquote>
+<p>The most interesting of the “laws” is “Amdahl’s Law” which refers to parallelism and the potiential speed improvements that can be gained by increasing core counts for a particular application.</p>
+<p>Amdahl’s refers to the speedup that can be expected from parallel computations as limited by the sequentional portion of the application. Applications can be divided into sequential and parallel portions, of which _P_ defines the percentage of the application that executes in parallel.</p>
+<p>The Wikipedia image shows the potential speedup with each additional core. The lines denote differing values for _P_ (50%, 75%, 90% and 95%).<br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AmdahlsLaw.svg/1280px-AmdahlsLaw.svg.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AmdahlsLaw.svg/1280px-AmdahlsLaw.svg.png"></p>
+<p>The graph shows that an application with a 50% parallelized portion (such as Google Chrome) will not benefit from anymore than 16 processor cores. An application with 90% parallization will not benefit from more than 512 processor cores.</p>
+<p>There’s an informative video by <a href="https://www.youtube.com/watch?v=eJBOU23L720&amp;t=442" target="_blank" rel="noopener">Coreteks</a> titled <a href="https://www.youtube.com/watch?v=eJBOU23L720&amp;t=442" target="_blank" rel="noopener">Hardware trends: How many cores do we need?!</a> where he succinctly explains Amdahl’s law and how it relates to CPUs, GPUs, ASICs and FPGAs. In the video he states that GPUs, ASICs and FPGAs are not necessarily solutions to CPU performance issues as they all suffer from Amdahl’s law. Once a commonly performed tasks have a specialized ASIC created, there is not much that can be done beyond the hardware optimization work we’ve seen in the past. Transistor size reductions providing ~40% performance improvements every two years will no longer be the case. And tasks which cannot be fully parallelized will not benefit from being executed across many cores. Hence software developers will have to become more accustomed to optimizing their applications again.</p>
+<h3 id="Microservices"><a href="#Microservices" class="headerlink" title="Microservices"></a>Microservices</h3><p>One consequence of Moore’s Law ending is the proliferation of computing across many devices and computers. CPU computation will become distributed and closer to where it is needed. This is seen in the proliferation of IoT applications we have been seeing.</p>
+<p>Part of this has been the push towards microservices. Microservice oriented architectures have the potential to suffer from the same constraints around scaling as Amdahl’s law.</p>
+<p>Though data is normally partitioned (ideally by more than the tenant), sometimes there’s ends up being shared resources where data must be processed sequentially. These portions of the application can be rather difficult to scale.</p>
+<p>What percentage of a user’s request can be parallized in a distributed system? Are there transactions that need to occur? What about costly shared infrastructure such as queues or event streams?</p>
+<p>If a request must go through a shared linear queue in a distributed system, this may limit how effective simply scaling the components around the queue will be.</p>
+<p>When architecting distributed systems, careful consideration must be made about shared state if one wants to effectively understand how their system will scale. Simply increasing the number of web servers one has when their file storage is the bottleneck is not effective and can be counter productive.</p>
+<h3 id="Future-technologies"><a href="#Future-technologies" class="headerlink" title="Future technologies"></a>Future technologies</h3><p>There are many technologies in the pipeline of chip manufacturers including 2.5D and 3D packaging which allow for the addition of memory, ASICs, GPUs and other chiplets to be included on processor dies. By including these chiplets on processor dies, the amount of energy and time required to transfer data can be reduced. Making previously high latency tasks feasible in high performance computing.</p>
+<p>Other technologies include asymethic processing cores, where CPU cores are designed for different tasks. One core may be designed for high performance single threaded applications such as web browsers, while other cores will be designed for parallizable vector computables used by graphics or video editing applications.</p>
+<p>There are still improvements that can be made at the power and IPC level, but they will require changes in software and operating systems.</p>
+<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>The take away from Cantrill’s presentation is that computers aren’t going to get <em>much</em> faster <strong><em>and</em></strong> cheaper from here. We will see some improvements in the amount of cores packed into a machine, but this may come at the cost of heat, price and memory latency.</p>
+<p>The real outcome is going to be the proliferation of more computers being used in areas we previously did not expect and larger distributed systems being built across slower commodity hardware.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://hekar.github.io/blog/2019/08/17/2019-08-14-qcon-no-moore/" data-id="cjzg0162i001ph4uy52x348yd" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/blog/2016/09/23/quality-code-reviews/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Quality Code Reviews</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Hekar Khani<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/blog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+
+<script src="/blog/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

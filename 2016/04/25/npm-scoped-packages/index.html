@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Scoped Packages with npm-link | Hekar Khani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="In the past few months, I have noticed that npm link and scoped packages have gone underused by my colleagues.The npm link command is essential for quick development. And if you’re building private pa">
+<meta name="keywords" content="nodejs">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Scoped Packages with npm-link">
+<meta property="og:url" content="https://hekar.github.io/blog/2016/04/25/npm-scoped-packages/index.html">
+<meta property="og:site_name" content="Hekar Khani">
+<meta property="og:description" content="In the past few months, I have noticed that npm link and scoped packages have gone underused by my colleagues.The npm link command is essential for quick development. And if you’re building private pa">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-17T20:13:03.324Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Scoped Packages with npm-link">
+<meta name="twitter:description" content="In the past few months, I have noticed that npm link and scoped packages have gone underused by my colleagues.The npm link command is essential for quick development. And if you’re building private pa">
+  
+    <link rel="alternate" href="/blog/atom.xml" title="Hekar Khani" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/blog/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/blog/" id="logo">Hekar Khani</a>
+        <span id="subtitle">Mov instructions masquerading as complex systems</span>
+      </h1>
+      
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/blog/">Home</a>
+        
+          <a class="main-nav-link" href="/blog/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/blog/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://hekar.github.io/blog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-npm-scoped-packages" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2016/04/25/npm-scoped-packages/" class="article-date">
+  <time datetime="2016-04-25T04:00:00.000Z" itemprop="datePublished">2016-04-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/node/">node</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Scoped Packages with npm-link
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>In the past few months, I have noticed that <code>npm link</code> and scoped packages have gone underused by my colleagues.<br>The <code>npm link</code> command is essential for quick development. And if you’re building private packages inside an organization, scoped packages can make managing and installing packages much simpler.</p>
+<p>Before we can do anything, we need a scoped package. Fortunately, it’s as simple as naming the package in the following format: <code>@&lt;scope&gt;/&lt;package&gt;</code>.</p>
+<p>For example, in <code>package.json</code>:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"name"</span>: <span class="string">"@mycompany/fast-lib"</span></span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Sometimes you want to make changes to a dependency while working on an application. This means you have both repositories on your local machine and are making modifications. You could manually sync them using <code>npm install</code>, but there’s an easier way. Create a symbolic link using <code>npm link</code>.</p>
+<p>The synopsis from the <code>npm</code> documentation states that the npm link command only takes a single argument. The name of the [scoped] package.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm link (in package dir)</span><br><span class="line">npm link [&lt;@scope&gt;/]&lt;pkg&gt;[@&lt;version&gt;]</span><br><span class="line"></span><br><span class="line">alias: npm ln</span><br></pre></td></tr></table></figure>
+<p>Using <code>npm link</code> is easier than it seems. You do not need to chdir outside your project’s folder.</p>
+<p>To link a scoped package to a project:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm link &lt;path-to-dependency&gt; @scope/&lt;package&gt;[@version]</span><br></pre></td></tr></table></figure></p>
+<p>Same goes for non-scoped packages:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm link &lt;path-to-dependency&gt; &lt;package&gt;[@version]</span><br></pre></td></tr></table></figure></p>
+<p><code>@version</code> is optional.</p>
+<p>Example:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm link ../fast-lib @mycompany/fast-lib@1.0.0</span><br></pre></td></tr></table></figure></p>
+<p>To validate that it worked, check the folder in <code>node_modules/</code> to make sure it’s a symlink and points to the correct folder.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ls -l node_modules/@scope/&lt;package&gt;</span><br><span class="line"># or</span><br><span class="line">ls -l node_modules/&lt;package&gt;</span><br></pre></td></tr></table></figure>
+<p>You should see a reference to the folder containing the project.</p>
+<p>To use a private npm registry for your scoped packages, you need to setup an <code>.npmrc</code>. This does not apply if you’re using <a href="https://www.npmjs.com/npm/private-packages" target="_blank" rel="noopener">npmjs.com</a>. See their <a href="https://docs.npmjs.com/orgs/what-are-orgs" target="_blank" rel="noopener">documentation</a> for details.</p>
+<p>Getting authenticated with your respective npm registry is different depending on where your packages are hosted. The configuration of the <code>.npmrc</code> is always the same though.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@&lt;scope&gt;:registry=https://&lt;your-npm-registry&gt;/</span><br><span class="line">//&lt;your-npm-registry&gt;/:_password=&lt;password-base-64&gt;</span><br><span class="line">//&lt;your-npm-registry&gt;/:username=&lt;username&gt;</span><br><span class="line">//&lt;your-npm-registry&gt;/:email=&lt;email&gt;</span><br><span class="line">//&lt;your-npm-registry&gt;/:always-auth=true</span><br></pre></td></tr></table></figure></p>
+<p>The <code>.npmrc</code> is read from the following locations in the order:</p>
+<ol>
+<li>per-project config file (/path/to/my/project/.npmrc)</li>
+<li>per-user config file (~/.npmrc)</li>
+<li>global config file ($PREFIX/etc/npmrc)</li>
+<li>npm builtin config file (/path/to/npm/npmrc)</li>
+</ol>
+<p>That’s all you need to know about <code>npm link</code> and a primer on <a href="https://docs.npmjs.com/misc/scope" target="_blank" rel="noopener">scoped packages</a>.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://hekar.github.io/blog/2016/04/25/npm-scoped-packages/" data-id="cjzfzllvj000ah4uytw1newfs" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/nodejs/">nodejs</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2016/09/23/quality-code-reviews/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Quality Code Reviews
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog/2015/05/21/opensuse-lenovo-t520/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Thinkpad T520 - OpenSUSE 13.2</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Hekar Khani<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/blog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+
+<script src="/blog/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

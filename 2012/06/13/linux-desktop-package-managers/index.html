@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>The Linux Desktop and Package Managers | Hekar Khani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Server based Linux distributions are simply extraordinary. They’re performant, reliable, fault tolerant and support a large variety of applications. Features of the operating systems are engineered to">
+<meta name="keywords" content="linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The Linux Desktop and Package Managers">
+<meta property="og:url" content="https://hekar.github.io/blog/2012/06/13/linux-desktop-package-managers/index.html">
+<meta property="og:site_name" content="Hekar Khani">
+<meta property="og:description" content="Server based Linux distributions are simply extraordinary. They’re performant, reliable, fault tolerant and support a large variety of applications. Features of the operating systems are engineered to">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-08-17T20:13:03.309Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="The Linux Desktop and Package Managers">
+<meta name="twitter:description" content="Server based Linux distributions are simply extraordinary. They’re performant, reliable, fault tolerant and support a large variety of applications. Features of the operating systems are engineered to">
+  
+    <link rel="alternate" href="/blog/atom.xml" title="Hekar Khani" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/blog/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/blog/" id="logo">Hekar Khani</a>
+        <span id="subtitle">Mov instructions masquerading as complex systems</span>
+      </h1>
+      
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/blog/">Home</a>
+        
+          <a class="main-nav-link" href="/blog/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/blog/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://hekar.github.io/blog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-linux-desktop-package-managers" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2012/06/13/linux-desktop-package-managers/" class="article-date">
+  <time datetime="2012-06-13T04:00:00.000Z" itemprop="datePublished">2012-06-13</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/linux/">linux</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      The Linux Desktop and Package Managers
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Server based Linux distributions are simply extraordinary. They’re performant, reliable, fault tolerant and support a large variety of applications. Features of the operating systems are engineered to make sense for large scale deployments. Everything from the setup of the file system to the way services are handled makes sense for a server. Organizations rarely see limitations with their Linux distributions, instead they see a powerful and malleable operating system that suites the needs of modern networks and service architectures.</p>
+<p>Distributions like Red Hat, Suse Enterprise (and in some cases Debian) make it very easy for organizations to have confidence in the software they run and to be sure that security updates will come in on time. They’re not too worried about having to compile software they do not find in the package manager from scratch. They’re probably also not worried that many of the packages in the manager are a few months or years out of date. It doesn’t matter. They simply require tried and tested software that they know will  host their services.</p>
+<p>The server environment has had a ton of investment over the years and is thoroughly engineered to meet the demands of the enterprise. The success of the Linux server is no mishap. It is properly engineered, purely deliberate and fully functional.</p>
+<p>What about the Linux desktop? Well one could argue that with the advent of Windows 7 that Linux desktop distributions have been less and less relevant. On the other hand one could also argue that with Windows 8 they will be more relevant than before.</p>
+<p>Why has the Linux desktop failed while the server has been so successful? The reasons are very numerous and very complicated.&nbsp;There is no single issue that amounts to the trouble that is the Linux desktop. There are only minor issues that all add up to be a sum greater than their individual parts.</p>
+<p>That is except for the installation of software. In no other area do Linux desktop distributions have more trouble (gaming is another post in its own right).&nbsp;For example. Imagine a wireless driver that has a regression from kernel release 2.6.32 to 3.0.0 and stops functioning (this problem was faced by my most recent laptop.) That means that the average user that does not want to compile a kernel can only install a distribution that is old enough to support 2.6.31.</p>
+<p>Why can’t a Linux distribution with kernel 3.0.0, also be able to support the kernel from a previous release? And pull it from an older repository? Why can’t packages know which kernel they support? Well, the reason is that package maintainers usually do not know what the oldest kernel version is that a package supports (unless it’s a high profile package such as glibc, gcc, xorg,  drivers, etc.)</p>
+<p>Actually most applications rarely rely on kernel versions. Debian’s dpkg is an example of a program that actually does rely on being compiled against specific kernel versions to access superior functionality. This is done for performance, but very few user land applications actually do this. On a given system, only a handful of packages require a kernel more recent than x.x.5 releases behind.</p>
+<p>Why can’t users just have the best of both worlds and install two different versions of dpkg, so they use each kernel? You can argue about a distribution supporting multiple versions of a kernel and its merits, along with the technical difficulty of such a proposition. It’s a very difficult matter and distributions are usually not in the business of spending time doing this. They’re usually too busy simply packaging and integrating software for the next release to have any time or resources for small gains.</p>
+<p>But what about multiple versions of Mozilla Firefox? Multiple versions of GCC? Why is this a problem? What if a user needs both GCC 4.2 and 4.7? Why does a package maintainer have to split them apart for the user? What if the distribution doesn’t have both versions? What if the user does not want to compile GCC from scratch. Doesn’t the process of having to compile an application  defeat the point of having an operating system? Does a user have an operating system to simply spend the majority of their time understanding compiler errors and waiting for infamously long C++ compile times?</p>
+<p>What about when a user goes to a website and they want to install an application, but they find that their distribution does not support the versions of dependencies required. They have to upgrade their distribution. Why can the distribution not have both the new versions of the libraries and the previous versions? Windows does this fine.</p>
+<p>It’s absolutely jarring to go from a website where I can see all the information on an application, switch to the package manager and find that the application is not available. Forcing the user into a jailed sandbox, where they rely on the distribution for software is the same as having an app store for your operating system. There is little to no difference. Users  have little control over the versions of software and have a hard time installing software from sources that are external to their standard repositories.</p>
+<p>It’s simply a system that cannot scale. Developers cannot package their software for multiple distributions and package maintainers simply cannot package all the world’s Linux applications. Users are locked into the tiny world that is their Linux distribution. Even Ubuntu is not perfect and versions differ and developers stop supporting software and package maintainers stop packaging software. There’s too much human effort being thrown at a problem that shouldn’t exist. It’s simply wasted time and effort.</p>
+<p>Linux on the desktop is simply a muscle car that’s burning and shredding its wheels, but it is going no where. It hasn’t solved the core problem of a desktop operating system. People do not simply select operating systems for their desktop environments or because they look good on tablets. They select them for the applications they run.</p>
+<p>An operating system’s only purpose is to run applications. This should be the primary focus of the Linux desktop.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://hekar.github.io/blog/2012/06/13/linux-desktop-package-managers/" data-id="cjzfzllu80000h4uyrb92qm6h" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/linux/">linux</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2012/06/25/scala-intellij/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Play 2.0 with Intellij
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog/2012/01/12/python-yield-keyword/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Python&#39;s Yield Keyword</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Hekar Khani<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/blog/" class="mobile-nav-link">Home</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+
+<script src="/blog/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
