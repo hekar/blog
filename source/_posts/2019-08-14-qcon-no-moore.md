@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2019-08-14
 title: QCon - No Moore Left to Give
 author: hkhani
 ---
