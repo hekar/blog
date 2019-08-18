@@ -65,6 +65,52 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-scala-test-eclipse" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2013/10/25/scala-test-eclipse/" class="article-date">
+  <time datetime="2013-10-25T04:00:00.000Z" itemprop="datePublished">2013-10-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/scala/">scala</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2013/10/25/scala-test-eclipse/">ScalaTest Eclipse</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>I tried the ScalaTest plugin Eclipse, but I couldn’t get them working with my version of ScalaTest. Fortunately, there’s an alternative: JUnit runners.</p>
+<p>Found the <a href="http://www.valleyprogramming.com/blog/running-scalatest-unit-tests-eclipse-junit-scala" target="_blank" rel="noopener">perfect tutorial</a> to get JUnit runners with ScalaTest working well in Eclipse.</p>
+<p>Here’s an example:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import org.junit.runner._</span><br><span class="line">import org.scalatest._</span><br><span class="line">import org.scalatest.junit._</span><br><span class="line"></span><br><span class="line">@RunWith(classOf[JUnitRunner])</span><br><span class="line">  class OneEqualOneSpec extends FunSuite &#123;</span><br><span class="line"></span><br><span class="line">    test(&quot;testing 1 = 1&quot;) &#123;</span><br><span class="line">      assert(1 == 1)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
+<p>This example can run under standard Java JUnit configurations in Gradle, Maven and Ant. Making it easier to integrate with existing projects.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://hekar.github.io/blog/2013/10/25/scala-test-eclipse/" data-id="cjzge6qh3000hi0uy3cp4i3n2" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/scala/">scala</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-project-lombok" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/blog/2013/10/07/project-lombok/" class="article-date">
@@ -104,7 +150,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hekar.github.io/blog/2013/10/07/project-lombok/" data-id="cjzfzllv40004h4uyluqxn2ci" class="article-share-link">Share</a>
+      <a data-url="https://hekar.github.io/blog/2013/10/07/project-lombok/" data-id="cjzge6qgy000bi0uydaosne3o" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/java/">java</a></li></ul>
@@ -151,59 +197,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hekar.github.io/blog/2013/08/12/what-does-this-code-do/" data-id="cjzfzllvz000jh4uyig9578fd" class="article-share-link">Share</a>
+      <a data-url="https://hekar.github.io/blog/2013/08/12/what-does-this-code-do/" data-id="cjzge6qh8000li0uyscvjfivf" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/java/">java</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-linux-mass-market" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2013/07/30/linux-mass-market/" class="article-date">
-  <time datetime="2013-07-30T04:00:00.000Z" itemprop="datePublished">2013-07-30</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/blog/categories/linux/">linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2013/07/30/linux-mass-market/">Linux Complaints and Mass Market</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Linux users complain a lot about their desktop environments. Gnome, KDE, Xfce, LXDE  etc. But that’s not nearly the biggest issue on the Linux desktop.</p>
-<p>The biggest issue is the complexity of packaging software and the shear manpower required to create a distribution.</p>
-<p>The end result is that not every distribution or version of distribution has access to a piece of software in binary form. People have to resort to compiling and packing their own software.</p>
-<p>There should be a shift to fix package management, increase binary compatibility and delegate the work of packaging to the developers that create the software.</p>
-<p>That means we can’t have 20 different package managers. Distributions have to support multiple package formats without discrepancy. They have to be able to support previous packages somehow. Whether this means including dependencies from Fedora 14 inside of Fedora 17 to be able to run old packages or some other solution. It’s a tough problem, but right now the state of software installation just isn’t there yet.</p>
-<p>People do not install operating systems for any reason other than to run applications. They will select the best operating system to run the applications they need.</p>
-<p>Therefore, if the Linux community wants to gain mass market share, it has no choice, but to make it as easy as possible to create and distribute software for Linux distributions. This should be the primary concern, as there is little purpose for an operating system, other than to run applications.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://hekar.github.io/blog/2013/07/30/linux-mass-market/" data-id="cjzfzlluo0001h4uyi4n1t3px" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/linux/">linux</a></li></ul>
 
     </footer>
   </div>

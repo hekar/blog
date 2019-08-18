@@ -65,6 +65,72 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-npm-scoped-packages" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2016/04/25/npm-scoped-packages/" class="article-date">
+  <time datetime="2016-04-25T04:00:00.000Z" itemprop="datePublished">2016-04-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/node/">node</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2016/04/25/npm-scoped-packages/">Scoped Packages with npm-link</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>In the past few months, I have noticed that <code>npm link</code> and scoped packages have gone underused by my colleagues.<br>The <code>npm link</code> command is essential for quick development. And if you’re building private packages inside an organization, scoped packages can make managing and installing packages much simpler.</p>
+<p>Before we can do anything, we need a scoped package. Fortunately, it’s as simple as naming the package in the following format: <code>@&lt;scope&gt;/&lt;package&gt;</code>.</p>
+<p>For example, in <code>package.json</code>:<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="string">"name"</span>: <span class="string">"@mycompany/fast-lib"</span></span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Sometimes you want to make changes to a dependency while working on an application. This means you have both repositories on your local machine and are making modifications. You could manually sync them using <code>npm install</code>, but there’s an easier way. Create a symbolic link using <code>npm link</code>.</p>
+<p>The synopsis from the <code>npm</code> documentation states that the npm link command only takes a single argument. The name of the [scoped] package.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">npm link (in package dir)</span><br><span class="line">npm link [&lt;@scope&gt;/]&lt;pkg&gt;[@&lt;version&gt;]</span><br><span class="line"></span><br><span class="line">alias: npm ln</span><br></pre></td></tr></table></figure>
+<p>Using <code>npm link</code> is easier than it seems. You do not need to chdir outside your project’s folder.</p>
+<p>To link a scoped package to a project:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm link &lt;path-to-dependency&gt; @scope/&lt;package&gt;[@version]</span><br></pre></td></tr></table></figure></p>
+<p>Same goes for non-scoped packages:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm link &lt;path-to-dependency&gt; &lt;package&gt;[@version]</span><br></pre></td></tr></table></figure></p>
+<p><code>@version</code> is optional.</p>
+<p>Example:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm link ../fast-lib @mycompany/fast-lib@1.0.0</span><br></pre></td></tr></table></figure></p>
+<p>To validate that it worked, check the folder in <code>node_modules/</code> to make sure it’s a symlink and points to the correct folder.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ls -l node_modules/@scope/&lt;package&gt;</span><br><span class="line"># or</span><br><span class="line">ls -l node_modules/&lt;package&gt;</span><br></pre></td></tr></table></figure>
+<p>You should see a reference to the folder containing the project.</p>
+<p>To use a private npm registry for your scoped packages, you need to setup an <code>.npmrc</code>. This does not apply if you’re using <a href="https://www.npmjs.com/npm/private-packages" target="_blank" rel="noopener">npmjs.com</a>. See their <a href="https://docs.npmjs.com/orgs/what-are-orgs" target="_blank" rel="noopener">documentation</a> for details.</p>
+<p>Getting authenticated with your respective npm registry is different depending on where your packages are hosted. The configuration of the <code>.npmrc</code> is always the same though.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@&lt;scope&gt;:registry=https://&lt;your-npm-registry&gt;/</span><br><span class="line">//&lt;your-npm-registry&gt;/:_password=&lt;password-base-64&gt;</span><br><span class="line">//&lt;your-npm-registry&gt;/:username=&lt;username&gt;</span><br><span class="line">//&lt;your-npm-registry&gt;/:email=&lt;email&gt;</span><br><span class="line">//&lt;your-npm-registry&gt;/:always-auth=true</span><br></pre></td></tr></table></figure></p>
+<p>The <code>.npmrc</code> is read from the following locations in the order:</p>
+<ol>
+<li>per-project config file (/path/to/my/project/.npmrc)</li>
+<li>per-user config file (~/.npmrc)</li>
+<li>global config file ($PREFIX/etc/npmrc)</li>
+<li>npm builtin config file (/path/to/npm/npmrc)</li>
+</ol>
+<p>That’s all you need to know about <code>npm link</code> and a primer on <a href="https://docs.npmjs.com/misc/scope" target="_blank" rel="noopener">scoped packages</a>.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://hekar.github.io/blog/2016/04/25/npm-scoped-packages/" data-id="cjzge6qgd0000i0uy3788lr0d" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/nodejs/">nodejs</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-opensuse-lenovo-t520" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/blog/2015/05/21/opensuse-lenovo-t520/" class="article-date">
@@ -120,7 +186,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hekar.github.io/blog/2015/05/21/opensuse-lenovo-t520/" data-id="cjzfzllv40005h4uy7is65reb" class="article-share-link">Share</a>
+      <a data-url="https://hekar.github.io/blog/2015/05/21/opensuse-lenovo-t520/" data-id="cjzge6qgt0006i0uy8w492553" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/linux/">linux</a></li></ul>
@@ -172,56 +238,10 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://hekar.github.io/blog/2013/11/24/zero-k-lobby-linux/" data-id="cjzfzllwf000ph4uy7u641ugn" class="article-share-link">Share</a>
+      <a data-url="https://hekar.github.io/blog/2013/11/24/zero-k-lobby-linux/" data-id="cjzge6qhf000ti0uy8at6yeoc" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/gamesonlinux/">gamesonlinux</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-scala-test-eclipse" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2013/10/25/scala-test-eclipse/" class="article-date">
-  <time datetime="2013-10-25T04:00:00.000Z" itemprop="datePublished">2013-10-25</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/blog/categories/scala/">scala</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2013/10/25/scala-test-eclipse/">ScalaTest Eclipse</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>I tried the ScalaTest plugin Eclipse, but I couldn’t get them working with my version of ScalaTest. Fortunately, there’s an alternative: JUnit runners.</p>
-<p>Found the <a href="http://www.valleyprogramming.com/blog/running-scalatest-unit-tests-eclipse-junit-scala" target="_blank" rel="noopener">perfect tutorial</a> to get JUnit runners with ScalaTest working well in Eclipse.</p>
-<p>Here’s an example:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">import org.junit.runner._</span><br><span class="line">import org.scalatest._</span><br><span class="line">import org.scalatest.junit._</span><br><span class="line"></span><br><span class="line">@RunWith(classOf[JUnitRunner])</span><br><span class="line">  class OneEqualOneSpec extends FunSuite &#123;</span><br><span class="line"></span><br><span class="line">    test(&quot;testing 1 = 1&quot;) &#123;</span><br><span class="line">      assert(1 == 1)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure></p>
-<p>This example can run under standard Java JUnit configurations in Gradle, Maven and Ant. Making it easier to integrate with existing projects.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://hekar.github.io/blog/2013/10/25/scala-test-eclipse/" data-id="cjzfzllvj000ch4uy1gxuhgc8" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/scala/">scala</a></li></ul>
 
     </footer>
   </div>
