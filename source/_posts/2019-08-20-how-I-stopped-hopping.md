@@ -45,13 +45,15 @@ Never the less, one day while watching YouTube videos on Linux kernel developmen
 
 ### Distributions are not special
 
-Most Linux distributions are roughly same. They are based on Systemd. They have a package manager that uses HTTP to pull compressed packages with files and scripts to the local machine. The packages are signed and normally from a trusted source. They use the same desktop environments and rendering systems. Their installers are roughly the same from a user facing level.
+Most Linux distributions are roughly the same. Most use Systemd. They have a package manager that uses HTTP to pull compressed packages with files and scripts to copy and execute on the local machine. The packages are signed and normally from a trusted source. They use the same desktop environments and rendering systems. Their installers are roughly the same from a user facing level. etc... I could go on...
 
-There is little point in moving between Linux distributions, especially if they are derivatives of operating systems supported by major communities with funding. The point of an operating is not to have the operating system, but to install applications over top of the system. This is where Ubuntu became so popular. It would get out of the way of the user and allow them to install applications.
+There is little point in moving between Linux distributions, especially if they are merely derivatives of existing operating systems supported by major communities with funding. The point of an operating system is not to use the operating system, but to use the applications supported by the system. Operating systems do not do functional tasks. They provide support for doing functional tasks to applications. Applications do the functional tasks. This is why Ubuntu became so popular. Ubuntu got out of the way of users and made it easier to install applications.
 
-Linus Torvalds said the same as he pointed out he used Fedora, because it was easy to install and use. He didn't pay much attention to the Linux distribution, because it's not that relevant.
+Linus Torvalds said the same as he pointed out he used Fedora, because it was easy to install and use. He didn't pay much attention to the Linux distribution, because it's not relevant. He wanted to use applications and work on the Linux kernel. Not play around with Linux distributions.
 
 ### Tips to stop
+
+Hopefully you realise switching Linux distributions is usually pointless.
 
 If you are still distro hopping, I would recommend the following:
 
@@ -60,7 +62,7 @@ If you are still distro hopping, I would recommend the following:
 2. Stop customizing your environment
     - Operating systems are meant for running applications. Installing themes or customizations is not a use case. It's a form of procrastination.
 3. Use your computer for performing tasks; as a means to an end
-    - Treat your computer as a "Workstation". Computers are meant to do work. Avoid using them as a mechanism for entertainment or wasting time.
+    - Treat your computer as a "Workstation". Computers are meant to do work. Avoid using them as a mechanism for entertainment or time wasting.
 
 Unfortunately I no longer have that TurboLinux disc anymore, but it holds an important part in my memory of the not only the introduction to Linux, but as the precursor to what would become an interest in software development.
 
