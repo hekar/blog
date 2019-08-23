@@ -6,6 +6,7 @@
     "version": "3.9.0"
   },
   "scripts": {
+    "clean": "hexo clean",
     "start": "hexo server",
     "deploy": "hexo deploy -g"
   },
