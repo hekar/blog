@@ -65,6 +65,146 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-2019-08-14-qcon-no-moore" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2019/08/14/2019-08-14-qcon-no-moore/" class="article-date">
+  <time datetime="2019-08-14T04:00:00.000Z" itemprop="datePublished">2019-08-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2019/08/14/2019-08-14-qcon-no-moore/">QCon - No Moore Left to Give</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p><a href="https://www.infoq.com/presentations/moore-law-expiring/" target="_blank" rel="noopener">No Moore Left to Give: Enterprise Computing after Moore’s Law</a></p>
+<p>This post is based on a <a href="https://www.infoq.com/qconnewyork2019/" target="_blank" rel="noopener">keynote presentation</a> by Bryan Cantrill and is <a href="https://www.infoq.com/presentations/moore-law-expiring/?itm_source=infoq&amp;itm_medium=popular_widget&amp;itm_campaign=popular_content_list&amp;itm_content=" target="_blank" rel="noopener">freely available on the InfoQ website.</a></p>
+</blockquote>
+<p><a href="https://www.youtube.com/results?search_query=bryan+cantrill" target="_blank" rel="noopener">Bryan Cantrill</a> is one of my favorite presenters, so I was excited to see that he’d be giving a keynote at QCon. For a long time, computer enthuasaists have been talking about the end of Moore’s law and what it means for computing. What Cantrill explains is that Moore’s law is close to ending, it’s not the end of the world, but developers aren’t going to get the “free” performance increases we’ve seen in the past.</p>
+<p>Bryan references three “laws” in his talk.</p>
+<p>The laws referenced are Dennard Scaling, Moore’s Law and Amdahl’s Law.</p>
+<p>What Bryan argues is that Moore’s Law is nearing its end and transistor sizes below 7nm are going to be more expensive and yield less benefits going forward. Programmers have become accustomed to computers becoming faster and cheaper every year, but this may no longer be the case.</p>
+<p>I will quickly go over the three laws referenced by Cantrill in his talk.</p>
+<h3 id="Dennard-Scaling"><a href="#Dennard-Scaling" class="headerlink" title="Dennard Scaling"></a>Dennard Scaling</h3><p>From Wikipedia: <a href="https://en.wikipedia.org/wiki/Dennard_scaling" target="_blank" rel="noopener">wiki/Dennard_scaling</a></p>
+<blockquote>
+<p>Dennard scaling, also known as MOSFET scaling, is a scaling law based on a 1974 paper co-authored by Robert H. Dennard, after whom it is named. Originally formulated for MOSFETs, it states, roughly, that as transistors get smaller, their power density stays constant, so that the power use stays in proportion with area; both voltage and current scale (downward) with length.</p>
+</blockquote>
+<p>Dennard scaling meant that processors could go faster simply by increasing the frequency. From 100Mhz to 2GHz to 3GHz and so on. Frequency increases broke down somewhere in 2005 - 2007, due to “current leakage” which caused increased chip heat and power consumption. Afterwards, chip manufacturers began adding additional cores, instead of optimizing for increased frequencies.</p>
+<h3 id="Moore’s-Law"><a href="#Moore’s-Law" class="headerlink" title="Moore’s Law"></a>Moore’s Law</h3><p>From Wikipedia: <a href="https://en.wikipedia.org/wiki/Moore%27s_law" target="_blank" rel="noopener">wiki/Moores_law</a></p>
+<blockquote>
+<p>Moore’s law is the observation that the number of transistors in a dense integrated circuit doubles about every two years. The observation is named after Gordon Moore, the co-founder of Fairchild Semiconductor and CEO of Intel, whose 1965 paper described a doubling every year in the number of components per integrated circuit, and projected this rate of growth would continue for at least another decade. In 1975 looking forward to the next decade, he revised the forecast to doubling every two years, a compound annual growth rate (CAGR) of 41.4%.</p>
+</blockquote>
+<p>Unlike Dennard’s Scaling, the definition of Moore’s Law has less of a consenus. People are still debating exactly what the law covers. Cantrill defines Moore’s Law a differently from the summary on Wikipedia. He uses references found in various interviews, articles and books to piece together what he thinks Moore’s Law means.</p>
+<p>From his <a href="https://www.slideshare.net/bcantrill/no-moore-left-to-give-enterprise-computing-after-moores-law" target="_blank" rel="noopener">slides</a></p>
+<blockquote>
+<p>“…for many years, Moore’s Law could be inferred to the doublings of density, speed and economics…”</p>
+</blockquote>
+<p>Moore’s Law accounts for more than the doubling of density, which could theoritically be achieved at the cost of economics (moving to a more expensive material) or speed.</p>
+<p>Cantrill argues that processors had become higher density, while also becoming cheaper for both manufacturers and consumers. This changed around 2015 when processors began becoming more expensive with each additional generation, even though transistor nodes had shrunk in size.</p>
+<h3 id="Amdahl’s-Law"><a href="#Amdahl’s-Law" class="headerlink" title="Amdahl’s Law"></a>Amdahl’s Law</h3><p>From Wikipedia: <a href="https://en.wikipedia.org/wiki/Amdahl%27s_law" target="_blank" rel="noopener">wiki/Amdahls_law</a></p>
+<blockquote>
+<p>In computer architecture, Amdahl’s law (or Amdahl’s argument[1]) is a formula which gives the theoretical speedup in latency of the execution of a task at fixed workload that can be expected of a system whose resources are improved. It is named after computer scientist Gene Amdahl, and was presented at the AFIPS Spring Joint Computer Conference in 1967.</p>
+</blockquote>
+<p>The most interesting of the “laws” is “Amdahl’s Law” which refers to parallelism and the potiential speed improvements that can be gained by increasing core counts for a particular application.</p>
+<p>Amdahl’s refers to the speedup that can be expected from parallel computations as limited by the sequentional portion of the application. Applications can be divided into sequential and parallel portions, of which _P_ defines the percentage of the application that executes in parallel.</p>
+<p>The Wikipedia image shows the potential speedup with each additional core. The lines denote differing values for _P_ (50%, 75%, 90% and 95%).<br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AmdahlsLaw.svg/1280px-AmdahlsLaw.svg.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AmdahlsLaw.svg/1280px-AmdahlsLaw.svg.png"></p>
+<p>The graph shows that an application with a 50% parallelized portion (such as Google Chrome) will not benefit from anymore than 16 processor cores. An application with 90% parallization will not benefit from more than 512 processor cores.</p>
+<p>There’s an informative video by <a href="https://www.youtube.com/watch?v=eJBOU23L720&amp;t=442" target="_blank" rel="noopener">Coreteks</a> titled <a href="https://www.youtube.com/watch?v=eJBOU23L720&amp;t=442" target="_blank" rel="noopener">Hardware trends: How many cores do we need?!</a> where he succinctly explains Amdahl’s law and how it relates to CPUs, GPUs, ASICs and FPGAs. In the video he states that GPUs, ASICs and FPGAs are not necessarily solutions to CPU performance issues as they all suffer from Amdahl’s law. Once a commonly performed tasks have a specialized ASIC created, there is not much that can be done beyond the hardware optimization work we’ve seen in the past. Transistor size reductions providing ~40% performance improvements every two years will no longer be the case. And tasks which cannot be fully parallelized will not benefit from being executed across many cores. Hence software developers will have to become more accustomed to optimizing their applications again.</p>
+<h3 id="Microservices"><a href="#Microservices" class="headerlink" title="Microservices"></a>Microservices</h3><p>One consequence of Moore’s Law ending is the proliferation of computing across many devices and computers. CPU computation will become distributed and closer to where it is needed. This is seen in the proliferation of IoT applications we have been seeing.</p>
+<p>Part of this has been the push towards microservices. Microservice oriented architectures have the potential to suffer from the same constraints around scaling as Amdahl’s law.</p>
+<p>Though data is normally partitioned (ideally by more than the tenant), sometimes there’s ends up being shared resources where data must be processed sequentially. These portions of the application can be rather difficult to scale.</p>
+<p>What percentage of a user’s request can be parallized in a distributed system? Are there transactions that need to occur? What about costly shared infrastructure such as queues or event streams?</p>
+<p>If a request must go through a shared linear queue in a distributed system, this may limit how effective simply scaling the components around the queue will be.</p>
+<p>When architecting distributed systems, careful consideration must be made about shared state if one wants to effectively understand how their system will scale. Simply increasing the number of web servers one has when their file storage is the bottleneck is not effective and can be counter productive.</p>
+<h3 id="Future-technologies"><a href="#Future-technologies" class="headerlink" title="Future technologies"></a>Future technologies</h3><p>There are many technologies in the pipeline of chip manufacturers including 2.5D and 3D packaging which allow for the addition of memory, ASICs, GPUs and other chiplets to be included on processor dies. By including these chiplets on processor dies, the amount of energy and time required to transfer data can be reduced. Making previously high latency tasks feasible in high performance computing.</p>
+<p>Other technologies include asymethic processing cores, where CPU cores are designed for different tasks. One core may be designed for high performance single threaded applications such as web browsers, while other cores will be designed for parallizable vector computables used by graphics or video editing applications.</p>
+<p>There are still improvements that can be made at the power and IPC level, but they will require changes in software and operating systems.</p>
+<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>The take away from Cantrill’s presentation is that computers aren’t going to get <em>much</em> faster <strong><em>and</em></strong> cheaper from here. We will see some improvements in the amount of cores packed into a machine, but this may come at the cost of heat, price and memory latency.</p>
+<p>The real outcome is going to be the proliferation of more computers being used in areas we previously did not expect and larger distributed systems being built across slower commodity hardware.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://hekar.github.io/blog/2019/08/14/2019-08-14-qcon-no-moore/" data-id="cjzge6qhz001oi0uykc9ec0q8" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-quality-code-reviews" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2016/09/23/quality-code-reviews/" class="article-date">
+  <time datetime="2016-09-23T04:00:00.000Z" itemprop="datePublished">2016-09-23</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/code-review/">code-review</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2016/09/23/quality-code-reviews/">Quality Code Reviews</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Lately I have been wondering why our team has been so effective with code reviews, until<br>an old friend of mine sent me a link to a video on doing <a href="https://www.youtube.com/watch?v=PJjmw9TRB7s" target="_blank" rel="noopener">effective code reviews</a>.</p>
+<p>Without realising it, we had already been following practices outlined in this video.</p>
+<p>While these aren’t rules and are more akin to guidelines or principles. Our team has come to focus on the following:</p>
+<ul>
+<li>Save other’s time, by reviewing your own code first</li>
+<li>Do not be on the offensive or defensive</li>
+<li>Ask questions</li>
+<li>Avoid the condescending “why didn’t you <em>just</em>…?”</li>
+<li>Try to add references (ie. external documentation, studies, etc)</li>
+</ul>
+<p>Part of this is because we have been following the ideas found in the video <a href="https://www.youtube.com/watch?v=J9OpTNk0hYc" target="_blank" rel="noopener">Does a developer need to be nice?</a>. The video refers to a study by Google on how to build great teams. Google found the key to a great<br>team is not whether it has good or great developers. Instead it is more important that the team has a factor of psychological safety. To quote an <a href="http://www.nytimes.com/2016/02/28/magazine/what-google-learned-from-its-quest-to-build-the-perfect-team.html" target="_blank" rel="noopener">article</a> from The New York Times referencing Google’s study:</p>
+<blockquote>
+<p>Psychological safety is “a sense of confidence that the team will not embarrass, reject or punish someone for speaking up,” Edmondson wrote in a study […]. “It describes a team climate characterized by interpersonal trust and mutual respect in which people are comfortable being themselves.”</p>
+</blockquote>
+<p>The purpose of the team is to release great products for the customer. Since software developers are usually introverted, creating a healthy work environment is essential to accomplishing this goal.</p>
+<p>The team should have a culture of being “nice”. Having a “superstar” cast of developers becomes secondary.</p>
+<p>Of course, this does not mean individuals need not be talented and willing to learn, both at work and<br>during their time outside of work. There is a degree of skill and grit required to produce the quality of software demanded by today’s consumers. However, code reviews and being generally pleasurable are<br>key assets. They contribute to quality just as much as technical abilities. Every developer has his or her own method<br>of practicing their technical skills, but they sometimes choose to ignore learning other practices that may be beneficial in their workplace. Sometimes it’s useful to take a step back and work on improving daily tasks that may seem mundane, but are actually important to quality.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://hekar.github.io/blog/2016/09/23/quality-code-reviews/" data-id="cjzge6qgw000ai0uydg464t64" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/process/">process</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-npm-scoped-packages" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/blog/2016/04/25/npm-scoped-packages/" class="article-date">
@@ -131,130 +271,11 @@
 
 
   
-    <article id="post-opensuse-lenovo-t520" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2015/05/21/opensuse-lenovo-t520/" class="article-date">
-  <time datetime="2015-05-21T04:00:00.000Z" itemprop="datePublished">2015-05-21</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/blog/categories/linux/">linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2015/05/21/opensuse-lenovo-t520/">Thinkpad T520 - OpenSUSE 13.2</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Getting a Thinkpad T520’s NVIDIA Quadro video card working with OpenSUSE 13.2 or other modern distributions does not have to be the hard.</p>
-<p>The main issue with many modern business oriented laptops seem to be that the digital video (DVI, HDMI, Display Port) signals can only be output from the NVIDIA cards. Fortunately, on the T520, we can easily configure Linux to use the NVIDIA video card as the primary card.</p>
-<p>Keep in mind, that this means losing the efficiency of the Intel video card. There is little to work around to this solution as configuring the Intel and NVIDIA cards to work together with a stable and performant digital output signal is rather complicated. I will not cover this in this tutorial. Instead, I have underclocked my NVIDIA card to deal with the fact that it generates more heat than the Intel based card.</p>
-<p>Heat dispersion is important, as the CPU and GPU on main laptops are connected to the same heatsink. Constant usage of the higher end video card can result in excessive heat generation and rise the CPU temperature. This can drastically affect speeds, as the CPU will lower its clock speed to compensate for the temperature rise.</p>
-<p>This tutorial assumes that you have the Linux distribution installed already installed. <strong>If you are having trouble installing the Linux distribution, because it freezes when loading X11 disable ACPI</strong>.</p>
-<h2 id="1-Configure-the-BIOS"><a href="#1-Configure-the-BIOS" class="headerlink" title="1. Configure the BIOS"></a>1. Configure the BIOS</h2><p>The most important step is to configure the BIOS to use the NVIDIA card rather than Optimus. This can be done by selecting the Display configuration option located under the Hardware section of the BIOS. You may also configure your primary display output (ie. DVI 1, DVI 2, Display Port 1, etc.). The configuration of the primary display output even works with the Lenovo Docking stations.</p>
-<h2 id="2-Install-the-NVIDIA-proprietary-driver"><a href="#2-Install-the-NVIDIA-proprietary-driver" class="headerlink" title="2. Install the NVIDIA proprietary driver"></a>2. Install the NVIDIA proprietary driver</h2><p>From here on is OpenSUSE 13.2 specific.</p>
-<p><a href="https://en.opensuse.org/SDB:NVIDIA_drivers#The_repository_way" target="_blank" rel="noopener">https://en.opensuse.org/SDB:NVIDIA_drivers#The_repository_way</a></p>
-<p>Installing the NVIDIA driver is pretty simple. Do not reboot until you have fully configured OpenSuse.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">zypper ar -f ftp://download.nvidia.com/opensuse/13.2/ nvidia</span><br><span class="line">sudo zypper in x11-video-nvidiaG04</span><br></pre></td></tr></table></figure>
-<h2 id="3-Blacklist-the-Nouveau-and-Intel-driver"><a href="#3-Blacklist-the-Nouveau-and-Intel-driver" class="headerlink" title="3. Blacklist the Nouveau and Intel driver"></a>3. Blacklist the Nouveau and Intel driver</h2><p>Append <code>blacklist i915</code> and <code>blacklist nouveau</code> to “/etc/modprobe.d/50-blacklist.conf”:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">blacklist i915</span><br><span class="line">blacklist nouveau</span><br></pre></td></tr></table></figure>
-<h3 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">echo &apos;blacklist i915&apos; | sudo tee  --append /etc/modprobe.d/50-blacklist.conf</span><br><span class="line">echo &apos;blacklist nouveau&apos; | sudo tee  --append /etc/modprobe.d/50-blacklist.conf</span><br></pre></td></tr></table></figure>
-<h2 id="4-Configure-Kernel-Parameters"><a href="#4-Configure-Kernel-Parameters" class="headerlink" title="4. Configure Kernel Parameters"></a>4. Configure Kernel Parameters</h2><p>Edit /etc/default/grub</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/default/grub</span><br></pre></td></tr></table></figure>
-<p>Change</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GRUB_CMDLINE_LINUX_DEFAULT=&quot; BOOT_IMAGE=/boot/x86_64/loader/linux ramdisk_size=512000 ramdisk_blocksize=4096 resume=/dev/sda2&quot;</span><br></pre></td></tr></table></figure>
-<p>To look like (append <code>acpi_osi=Linux nomodeset</code> to <code>GRUB_CMDLINE_LINUX_DEFAULT</code>):</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GRUB_CMDLINE_LINUX_DEFAULT=&quot; BOOT_IMAGE=/boot/x86_64/loader/linux ramdisk_size=512000 ramdisk_blocksize=4096 resume=/dev/sda2 acpi_osi=Linux nomodeset&quot;</span><br></pre></td></tr></table></figure>
-<p>Afterwards run:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo grub2-mkconfig -o /boot/grub2/grub.cfg</span><br></pre></td></tr></table></figure>
-<p>Hopefully it all works out.</p>
-<h2 id="5-Troubleshooting"><a href="#5-Troubleshooting" class="headerlink" title="5. Troubleshooting"></a>5. Troubleshooting</h2><p>Most of my issues have usually been ACPI configuration. If you have a different laptop try removing <code>acpi_osi=Linux</code> or using various other ACPI configuration options.</p>
-<p>See for more information: <a href="https://tr.opensuse.org/SDB:Kernel_Parameters_for_ACPI/APIC" target="_blank" rel="noopener">https://tr.opensuse.org/SDB:Kernel_Parameters_for_ACPI/APIC</a></p>
-<p>Message me on Twitter or visit the OpenSUSE forums for help.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://hekar.github.io/blog/2015/05/21/opensuse-lenovo-t520/" data-id="cjzge6qgt0006i0uy8w492553" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/linux/">linux</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-zero-k-lobby-linux" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2013/11/24/zero-k-lobby-linux/" class="article-date">
-  <time datetime="2013-11-24T05:00:00.000Z" itemprop="datePublished">2013-11-24</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/blog/categories/linux/">linux</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2013/11/24/zero-k-lobby-linux/">Building Zero-K Lobby on Linux</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Though, I am no longer an avid video game player I happened to come across a real-time strategy game a few months ago. The game is called Zero-K, is freely avaliable and open source. While the game runs very well under Windows, I have experienced quite a few issues under Linux.<br>Recently, the game had stopped working altogether and I had been unsure of why.</p>
-<p>After spending much time troubleshooting through “strace”, I had began to suspect that the problem lay in the Lobby frontend for the game, rather than the game itself.</p>
-<p>The Lobby is written in C# and has some issues building on Mono, but there are simple workarounds.</p>
-<h2 id="Quick-Fixes"><a href="#Quick-Fixes" class="headerlink" title="Quick Fixes"></a>Quick Fixes</h2><p><code>zero-k/other/.nugut/NuGet.targets</code> line 54:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(NuGetCommand) install &quot;$(PackagesConfig)&quot; -source &quot;$(PackageSources)&quot;  $(NonInteractiveSwitch) $(RequireConsentSwitch) -solutionDir &quot;$(SolutionDir) &quot;</span><br></pre></td></tr></table></figure>
-<p>Should instead be<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$(NuGetCommand) install &quot;$(PackagesConfig)&quot; -source &quot;$(PackageSources)&quot;  $(NonInteractiveSwitch) $(RequireConsentSwitch) -solutionDir &quot;$(SolutionDir)&quot;</span><br></pre></td></tr></table></figure></p>
-<p>Thereby removing the space after <code>$(SolutionDir)</code>. This was causing packages to be downloaded to <code>zero-k/other/ /packages</code> instead of <code>zero-k/other/packages</code>.</p>
-<p>Afterwards, it should fail due to case sensitive file resolution on Linux. The solution is to disable case sensitivity with Mono builds:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export MONO_IOMAP=all</span><br></pre></td></tr></table></figure>
-<p>Volla! The ZeroK Lobby should have successfully compiled to a binary.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://hekar.github.io/blog/2013/11/24/zero-k-lobby-linux/" data-id="cjzge6qhf000ti0uy8at6yeoc" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/gamesonlinux/">gamesonlinux</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/blog/">&laquo; Prev</a><a class="page-number" href="/blog/">1</a><span class="page-number current">2</span><a class="page-number" href="/blog/page/3/">3</a><a class="page-number" href="/blog/page/4/">4</a><a class="page-number" href="/blog/page/5/">5</a><a class="extend next" rel="next" href="/blog/page/3/">Next &raquo;</a>
+    <a class="extend prev" rel="prev" href="/blog/">&laquo; Prev</a><a class="page-number" href="/blog/">1</a><span class="page-number current">2</span><a class="page-number" href="/blog/page/3/">3</a><a class="page-number" href="/blog/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/6/">6</a><a class="extend next" rel="next" href="/blog/page/3/">Next &raquo;</a>
   </nav>
 
 </section>
