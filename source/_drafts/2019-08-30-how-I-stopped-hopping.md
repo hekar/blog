@@ -1,5 +1,5 @@
 ---
-layout: false
+layout: post
 date: 2019-08-30
 title: How I Stopped Distro Hopping
 author: hkhani
