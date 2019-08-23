@@ -1,13 +1,13 @@
 ---
-layout: post
-date: 2019-08-20
+layout: false
+date: 2019-08-30
 title: How I Stopped Distro Hopping
 author: hkhani
 ---
 
-Since 2005 I had been attempting to stick to a single installation of any Linux Desktop Distribution. Whether it was Mandrake, Debian, Slackware, Ubuntu, Fedora, SUSE, Mepis or any one of the countless Linux distributions I was constantly switching between. Even Windows would periodically be installed on my computer.
+Since 2005 I had been attempting to stick to a single installation of any Linux Desktop Distribution. Whether it was Mandrake, Debian, Slackware, Ubuntu, Fedora, SUSE, Mepis or any one of the countless Linux distributions I was constantly switching between. Even Windows would periodically be installed onto one of many computers.
 
-It took until 2017 to _finally_ stop the process of formatting and installing new distributions. Why did it take so long? Partially, I would argue that most Linux distribution releases weren't stable enough until recently. And there always the promise of an easy to use, yet stable and up to date distribution. But most of the blame could be placed on my usage, rather than the operating systems themselves. The issue was how I approached computing in general.
+It took until 2017 to _finally_ stop the process of formatting and installing new distributions. Why did it take so long? Partially, I would argue that most Linux distribution releases weren't stable enough until recently. And there'd always been the promise of an easy to use, yet stable and up to date distribution. But most of the blame could be placed on my usage, rather than the operating systems themselves. The issue was how I approached computing in general.
 
 ### How it started
 
@@ -15,19 +15,19 @@ I still remember getting my first computer at age 9 and finding TurboLinux Works
 
 It took a long time to find, but [someone else on twitter still has the disc.](https://twitter.com/thunderdabest1/status/1048572202965196800)
 
-TurboLinux stayed in that drawer for years until one day I decided to take it out. One day, while looking for images of Windows 3.11 through Google which proved fruitless. For some reason I wanted to try a new operating system. Being unable to find older versions of Windows, I went to the drawer and decided to see what was this TurboLinux disc. It took 3 days to install and log into the system. I hadn't understood that upon first boot one had to login as `root` and that the `root` password (which I randomly entered characters for) was the password entered during one of over 50 installation prompts. Fortunately another user had the same issue on [linuxquestions.org](https://www.linuxquestions.org) and I figured out how to login.
+TurboLinux stayed in that drawer for years until one day I decided to take it out. One day, while looking for images of Windows 3.11 through Google which proved fruitless. I decided to try a new operating system. Being unable to find older versions of Windows, I went to the drawer and to see what was this TurboLinux disc. It took 3 days to install and log into the system. I hadn't understood that upon first boot one had to login as `root` and that the `root` password (which I randomly entered characters for) was the password entered during one of over 50 installation prompts. Fortunately another user had the same issue on [linuxquestions.org](https://www.linuxquestions.org) and I figured out how to login.
 
 Although I successfully installed TurboLinux and used KDE, I never did get the WinModem in my 450MHz Compaq Pentium 2 to work with the kernel. Installation of the driver required recompilation of the kernel and that was too much for an 11 year old to figure out.
 
-Getting TurboLinux installed peeked my interest as the alternative had been an unreliable Windows 98. I had been doing more PlayStation than PC gaming at the time, so support for common video games wasn't a concern. [Distrowatch](https://distrowatch.com), [OSNews](https://www.osnews.com) and even [Slashdot](http://slashdot.org/) has become my most frequented sites at the time.
+Getting TurboLinux installed peeked my interest as the alternative had been the unreliable Windows 98. Since using the PlayStation more than the PC for gaming, support for video games wasn't a concern. [Distrowatch](https://distrowatch.com), [OSNews](https://www.osnews.com) and even [Slashdot](http://slashdot.org/) has become my most frequented sites at the time.
 
 ### Where do I find the Perfect Linux Distribution?
 
-Even without broadband internet, distribution hopping had caught me. Soon I was taking the money I had saved and ordered discs of Mandrake 9.2, Mandrake 10, collections with Debian, Slackware, Fedora Core, SUSE 9.1 Personal, Knoppix, ... Some of the distributions were over 12 CDs.
+Even without broadband internet, distribution hopping was still within reach. Soon I was taking all the money I had saved and ordering discs of Mandrake 9.2, Mandrake 10, collections with Debian, Slackware, Fedora Core, SUSE 9.1 Personal, Knoppix, ... Some of the distributions were over 12 CDs...
 
 Over the years, nearly every 2 weeks, I would spend _hours_ switching between Windows and various distros. Backing up data to floppies, then CDs, then DVDs. Often dual booting, but sometimes triple or quad booting on the same computer. Later on I purchased multiple computers to install even more operating systems.
 
-What started in 2005 as an interest in alternatives to Windows 98. Became formatting multiple computers on a weekly basis and annoying everyone about how Linux was going to change the world and everyone needed to try it out, because it was the year of the Linux desktop (_remember when that was a thing people talked about?_)
+What started in 2005 as an interest in alternatives to Windows 98. Became formatting multiple computers on a weekly basis and annoying everyone about how Linux was going to change the world and everyone needed to try it out. Because it was the year of the Linux desktop (_remember when that was a thing people talked about?_)
 
 ### Disenchantment
 
@@ -39,9 +39,9 @@ Before Docker existed, I would switch between distributions with alternating rel
 
 ### Rolling Release
 
-There are multiple reasons for distribution hopping, but I say that one of the main reasons is that users want to be running the latest packages available. This may not say this directly, but it becomes apparent when you notice that they're switching between entirely different distributions and talking about Gnome vs KDE.
+There are multiple reasons for distribution hopping, but I say that one of the main reasons is that users want to be running the latest packages available. This may not say this directly, but it becomes apparent when you notice that they're switching between entirely different distributions.
 
-Never the less, one day while watching YouTube videos on Linux kernel development, I came across OpenSUSE Tumbleweed. Similar to Arch, OpenSUSE Tumbleweed is a rolling release distribution, but is upgraded less aggressively. Tumbleweed uses a lot of automated testing to ensure breaking updates are less common than other rolling release distributions. Since switching, I have had no inclination towards installing different distributions. Having formatted in December 2017 to move from Btrfs to Ext4, I have not needed to reinstall since.
+Never the less, one day while watching YouTube videos on Linux kernel development, I came across OpenSUSE Tumbleweed. Similar to Arch, OpenSUSE Tumbleweed is a rolling release distribution, but is upgraded less aggressively. Tumbleweed uses automated test suites to ensure breaking updates are less common than other rolling release distributions. Since switching, I have had no inclination towards installing different distributions. Having formatted in December 2017 to move from Btrfs to Ext4, I have not needed to reinstall since.
 
 ### Distributions are not special
 
@@ -49,7 +49,7 @@ Most Linux distributions are roughly the same. Most use Systemd. They have a pac
 
 There is little point in moving between Linux distributions, especially if they are merely derivatives of existing operating systems supported by major communities with funding. The point of an operating system is not to use the operating system, but to use the applications supported by the system. Operating systems do not do functional tasks. They provide support for doing functional tasks to applications. Applications do the functional tasks. This is why Ubuntu became so popular. Ubuntu got out of the way of users and made it easier to install applications.
 
-Linus Torvalds said the same as he pointed out he used Fedora, because it was easy to install and use. He didn't pay much attention to the Linux distribution, because it's not relevant. He wanted to use applications and work on the Linux kernel. Not play around with Linux distributions.
+Linus Torvalds said the same as he pointed out why he used Fedora. Because it was easy to install and use. He didn't pay much attention to the Linux distribution. The distribution is not relevant. Applications are relevant. Linus wanted to use applications and develop the Linux kernel. Not play around with Linux distributions.
 
 ### Tips to stop
 
@@ -64,6 +64,6 @@ If you are still distro hopping, I would recommend the following:
 3. Use your computer for performing tasks; as a means to an end
     - Treat your computer as a "Workstation". Computers are meant to do work. Avoid using them as a mechanism for entertainment or time wasting.
 
-Unfortunately I no longer have that TurboLinux disc anymore, but it holds an important part in my memory of the not only the introduction to Linux, but as the precursor to what would become an interest in software development.
+Unfortunately I no longer have that TurboLinux disc anymore, but it holds an important part in my memory of not only the introduction to Linux, but as the precursor to what would become an interest in software development.
 
 Open Source really opened up the idea of software development in a greater community and provided a much needed sense of purpose that sparked the beginning of a passion for building software.
