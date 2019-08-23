@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hekar Khani</title>
+  
+  <subtitle>Mov instructions masquerading as complex systems</subtitle>
+  <link href="/blog/atom.xml" rel="self"/>
+  
+  <link href="https://hekar.github.io/blog/"/>
+  <updated>2019-08-23T21:46:09.625Z</updated>
+  <id>https://hekar.github.io/blog/</id>
+  
+  <author>
+    <name>Hekar Khani</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Electron, Vue.js and Vuetify Guide</title>
+    <link href="https://hekar.github.io/blog/2019/08/23/2019-08-23-electron-vue/"/>
+    <id>https://hekar.github.io/blog/2019/08/23/2019-08-23-electron-vue/</id>
+    <published>2019-08-23T04:00:00.000Z</published>
+    <updated>2019-08-23T21:46:09.625Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;This post is a quick tutorial on how to create an &lt;a href=&quot;https://github.com/SimulatedGREG/electron-vue&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Compiling Source SDK on Linux</title>
+    <link href="https://hekar.github.io/blog/2019/08/17/2019-08-17-source-sdk-linux/"/>
+    <id>https://hekar.github.io/blog/2019/08/17/2019-08-17-source-sdk-linux/</id>
+    <published>2019-08-17T04:00:00.000Z</published>
+    <updated>2019-08-23T21:14:08.756Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/Source_\(game_engine\&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Source SDK&lt;/a&gt;#Source_SDK) is a fork of
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>QCon - No Moore Left to Give</title>
+    <link href="https://hekar.github.io/blog/2019/08/14/2019-08-14-qcon-no-moore/"/>
+    <id>https://hekar.github.io/blog/2019/08/14/2019-08-14-qcon-no-moore/</id>
+    <published>2019-08-14T04:00:00.000Z</published>
+    <updated>2019-08-17T21:08:36.857Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.infoq.com/presentations/moore-law-expiring/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;No Moore Left to Give:
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Quality Code Reviews</title>
+    <link href="https://hekar.github.io/blog/2016/09/23/quality-code-reviews/"/>
+    <id>https://hekar.github.io/blog/2016/09/23/quality-code-reviews/</id>
+    <published>2016-09-23T04:00:00.000Z</published>
+    <updated>2019-08-17T20:13:03.324Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Lately I have been wondering why our team has been so effective with code reviews, until&lt;br&gt;an old friend of mine sent me a link to a
+        
+      
+    
+    </summary>
+    
+      <category term="code-review" scheme="https://hekar.github.io/blog/categories/code-review/"/>
+    
+    
+      <category term="process" scheme="https://hekar.github.io/blog/tags/process/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Scoped Packages with npm-link</title>
+    <link href="https://hekar.github.io/blog/2016/04/25/npm-scoped-packages/"/>
+    <id>https://hekar.github.io/blog/2016/04/25/npm-scoped-packages/</id>
+    <published>2016-04-25T04:00:00.000Z</published>
+    <updated>2019-08-17T20:13:03.324Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;In the past few months, I have noticed that &lt;code&gt;npm link&lt;/code&gt; and scoped packages have gone underused by my colleagues.&lt;br&gt;The
+        
+      
+    
+    </summary>
+    
+      <category term="node" scheme="https://hekar.github.io/blog/categories/node/"/>
+    
+    
+      <category term="nodejs" scheme="https://hekar.github.io/blog/tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Thinkpad T520 - OpenSUSE 13.2</title>
+    <link href="https://hekar.github.io/blog/2015/05/21/opensuse-lenovo-t520/"/>
+    <id>https://hekar.github.io/blog/2015/05/21/opensuse-lenovo-t520/</id>
+    <published>2015-05-21T04:00:00.000Z</published>
+    <updated>2019-08-17T20:13:03.324Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Getting a Thinkpad T520’s NVIDIA Quadro video card working with OpenSUSE 13.2 or other modern distributions does not have to be the
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://hekar.github.io/blog/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://hekar.github.io/blog/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Building Zero-K Lobby on Linux</title>
+    <link href="https://hekar.github.io/blog/2013/11/24/zero-k-lobby-linux/"/>
+    <id>https://hekar.github.io/blog/2013/11/24/zero-k-lobby-linux/</id>
+    <published>2013-11-24T05:00:00.000Z</published>
+    <updated>2019-08-17T20:13:03.324Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Though, I am no longer an avid video game player I happened to come across a real-time strategy game a few months ago. The game is
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://hekar.github.io/blog/categories/linux/"/>
+    
+    
+      <category term="gamesonlinux" scheme="https://hekar.github.io/blog/tags/gamesonlinux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ScalaTest Eclipse</title>
+    <link href="https://hekar.github.io/blog/2013/10/25/scala-test-eclipse/"/>
+    <id>https://hekar.github.io/blog/2013/10/25/scala-test-eclipse/</id>
+    <published>2013-10-25T04:00:00.000Z</published>
+    <updated>2019-08-17T20:13:03.324Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;I tried the ScalaTest plugin Eclipse, but I couldn’t get them working with my version of ScalaTest. Fortunately, there’s an alternative:
+        
+      
+    
+    </summary>
+    
+      <category term="scala" scheme="https://hekar.github.io/blog/categories/scala/"/>
+    
+    
+      <category term="scala" scheme="https://hekar.github.io/blog/tags/scala/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Project Lombok</title>
+    <link href="https://hekar.github.io/blog/2013/10/07/project-lombok/"/>
+    <id>https://hekar.github.io/blog/2013/10/07/project-lombok/</id>
+    <published>2013-10-07T04:00:00.000Z</published>
+    <updated>2019-08-17T20:13:03.324Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;I happened to come across &lt;a href=&quot;http://projectlombok.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Project Lombok&lt;/a&gt;, which is a library that
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://hekar.github.io/blog/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://hekar.github.io/blog/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>What does this code do?</title>
+    <link href="https://hekar.github.io/blog/2013/08/12/what-does-this-code-do/"/>
+    <id>https://hekar.github.io/blog/2013/08/12/what-does-this-code-do/</id>
+    <published>2013-08-12T04:00:00.000Z</published>
+    <updated>2019-08-17T20:13:03.324Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;script id=&quot;metamorph-175-start&quot; type=&quot;text/x-placeholder&quot;&gt;&lt;/script&gt;&lt;/p&gt;&lt;p&gt;As I’ve been learning Scala and Kotlin, I’ve been wondering
+        
+      
+    
+    </summary>
+    
+      <category term="java" scheme="https://hekar.github.io/blog/categories/java/"/>
+    
+    
+      <category term="java" scheme="https://hekar.github.io/blog/tags/java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux Complaints and Mass Market</title>
+    <link href="https://hekar.github.io/blog/2013/07/30/linux-mass-market/"/>
+    <id>https://hekar.github.io/blog/2013/07/30/linux-mass-market/</id>
+    <published>2013-07-30T04:00:00.000Z</published>
+    <updated>2019-08-17T20:13:03.324Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Linux users complain a lot about their desktop environments. Gnome, KDE, Xfce, LXDE  etc. But that’s not nearly the biggest issue on the
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://hekar.github.io/blog/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://hekar.github.io/blog/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows 8 Review</title>
+    <link href="https://hekar.github.io/blog/2012/10/28/windows-8-review/"/>
+    <id>https://hekar.github.io/blog/2012/10/28/windows-8-review/</id>
+    <published>2012-10-28T04:00:00.000Z</published>
+    <updated>2019-08-17T20:13:03.324Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Been using Windows 8 for a little over 3 weeks now.&lt;/p&gt;
+&lt;p&gt;I have to say, that this OS has been easier to use and has had less problems
+        
+      
+    
+    </summary>
+    
+      <category term="windows" scheme="https://hekar.github.io/blog/categories/windows/"/>
+    
+    
+      <category term="windows" scheme="https://hekar.github.io/blog/tags/windows/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Play 2.0 with Intellij</title>
+    <link href="https://hekar.github.io/blog/2012/06/25/scala-intellij/"/>
+    <id>https://hekar.github.io/blog/2012/06/25/scala-intellij/</id>
+    <published>2012-06-25T04:00:00.000Z</published>
+    <updated>2019-08-17T20:13:03.324Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;After upgrading to Windows 8, I noticed some stability issues with &lt;a href=&quot;http://www.eclipse.org/juno/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="scala" scheme="https://hekar.github.io/blog/categories/scala/"/>
+    
+    
+      <category term="scala" scheme="https://hekar.github.io/blog/tags/scala/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>The Linux Desktop and Package Managers</title>
+    <link href="https://hekar.github.io/blog/2012/06/13/linux-desktop-package-managers/"/>
+    <id>https://hekar.github.io/blog/2012/06/13/linux-desktop-package-managers/</id>
+    <published>2012-06-13T04:00:00.000Z</published>
+    <updated>2019-08-17T20:13:03.309Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Server based Linux distributions are simply extraordinary. They’re performant, reliable, fault tolerant and support a large variety of
+        
+      
+    
+    </summary>
+    
+      <category term="linux" scheme="https://hekar.github.io/blog/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://hekar.github.io/blog/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python&#39;s Yield Keyword</title>
+    <link href="https://hekar.github.io/blog/2012/01/12/python-yield-keyword/"/>
+    <id>https://hekar.github.io/blog/2012/01/12/python-yield-keyword/</id>
+    <published>2012-01-12T05:00:00.000Z</published>
+    <updated>2019-08-17T20:13:03.324Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;One of my most missed features in Java is the yield keyword found in Python.&lt;/p&gt;
+&lt;p&gt;Basically, instead of creating a collection and
+        
+      
+    
+    </summary>
+    
+      <category term="python" scheme="https://hekar.github.io/blog/categories/python/"/>
+    
+    
+      <category term="python" scheme="https://hekar.github.io/blog/tags/python/"/>
+    
+  </entry>
+  
+</feed>
