@@ -7,7 +7,7 @@ author: hkhani
 
 Since 2005 I had been attempting to stick to a single installation of any Linux Desktop Distribution. Whether it was Mandrake, Debian, Slackware, Ubuntu, Fedora, SUSE, Mepis or any one of the many Linux distributions I was constantly switching between. Even Windows would periodically be installed onto one of many computers.
 
-It took until 2017 to _finally_ stop the waste of time known as "distro hopping". Why did it take so long to stick with a single Linux distribution? Partially, I would argue that most Linux distribution releases were not stable enough until recently. There'd always been the promise of an easy to use, yet stable and up to date distribution that never existed. But the majority of the blame could be placed on my usage of the operating system, rather than the operating systems itself. The issue was how I approached computer usage in general. Fundamentally computers are meant to be programmed to perform useful tasks rather than tools of entertainment.
+It took until 2017 to _finally_ cease the time waster known as "distro hopping". Why did it take so long to stick with a single Linux distribution? Partially, I would argue that most Linux distribution releases were not stable enough until recently. There'd always been the promise of an easy to use, yet stable and up to date distribution that never existed. But the majority of the blame could be placed on my usage of the operating system, rather than the operating systems itself. The issue was how I approached computer usage in general. Fundamentally computers are meant to be programmed to perform useful tasks rather than tools of entertainment.
 
 ### How it started
 
