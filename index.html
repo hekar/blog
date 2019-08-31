@@ -65,6 +65,77 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-2019-08-30-how-I-stopped-hopping" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2019/08/30/2019-08-30-how-I-stopped-hopping/" class="article-date">
+  <time datetime="2019-08-30T04:00:00.000Z" itemprop="datePublished">2019-08-30</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2019/08/30/2019-08-30-how-I-stopped-hopping/">How I Stopped Distro Hopping</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Since 2005 I had been attempting to stick to a single installation of any Linux Desktop Distribution. Whether it was Mandrake, Debian, Slackware, Ubuntu, Fedora, SUSE, Mepis or any one of the many Linux distributions I was constantly switching between. Even Windows would periodically be installed onto one of many computers.</p>
+<p>It took until 2017 to <em>finally</em> stop the waste of time known as “distro hopping”. Why did it take so long to stick with a single Linux distribution? Partially, I would argue that most Linux distribution releases were not stable enough until recently. There’d always been the promise of an easy to use, yet stable and up to date distribution that never existed. But the majority of the blame could be placed on my usage of the operating system, rather than the operating systems itself. The issue was how I approached computer usage in general. Fundamentally computers are meant to be programmed to perform useful tasks rather than tools of entertainment.</p>
+<h3 id="How-it-started"><a href="#How-it-started" class="headerlink" title="How it started"></a>How it started</h3><p>I still remember getting my first computer at age 9 and finding <em>TurboLinux Workstation 6.0 Lite</em> in my brother’s stack of games discarded in the drawer. Most of the discs were part of the sim games collection, from cereal boxes, demo discs, need for speed or other miscellaneous games from the 1990s. The TurboLinux CD was different. <a href="https://twitter.com/thunderdabest1/status/1048572202965196800" target="_blank" rel="noopener">Only black, yellow and white</a> were used to print the large font and lightning bolt on the stamped compact disc. The branding did nothing to stand out and looked mysterious to my younger self that’d never seen anything but the vibrant imagery of PC game discs.</p>
+<p>TurboLinux stayed in that drawer for years until one day I decided to take it out. One day, while looking for images of Windows 3.11 through Google which proved fruitless. I decided to try a different operating system. Probably, because I had too much time as a child and had exhausted all the Control Panel options in Windows 98. Being unable to find older versions of Windows, I went to the drawer to see what this TurboLinux disc was… After 3 days of attempting to install and log into the system, I had succeeded. The primary issue being the login screen on first boot. Username and Password which fortunately another user with the issue posted on <a href="https://www.linuxquestions.org" target="_blank" rel="noopener">linuxquestions.org</a>. <code>root</code> and the <code>root</code> password entered during installation were required to login.</p>
+<p>Although I successfully installed TurboLinux, loaded KDE and Gnome, I never did get the WinModem in my 450MHz Compaq Pentium 2 to work with. Installation of the driver required recompilation of the kernel which was too difficult for myself at the time.</p>
+<p>Getting TurboLinux installed peeked my interest as the only alternative I’d known had been the unreliable Windows 98. Since using the PlayStation more than the PC for gaming, support for video games wasn’t a concern. <a href="https://distrowatch.com" target="_blank" rel="noopener">Distrowatch</a>, <a href="https://www.osnews.com" target="_blank" rel="noopener">OSNews</a> and even <a href="http://slashdot.org/" target="_blank" rel="noopener">Slashdot</a> has become my most frequented sites at the time.</p>
+<h3 id="Where-do-I-find-the-Perfect-Linux-Distribution"><a href="#Where-do-I-find-the-Perfect-Linux-Distribution" class="headerlink" title="Where do I find the Perfect Linux Distribution?"></a>Where do I find the Perfect Linux Distribution?</h3><p>Even without broadband internet, distribution hopping was still within reach. Ordering discs could be online with a credit card. At the time I had ordered Mandrake 9.2, Mandrake 10, collections with Debian, Slackware, Fedora Core, SUSE 9.1 Personal, Knoppix. Some distributions such as Debian were over 12 CDs.</p>
+<p>For the following years, nearly every 2 weeks, I would spend <em>hours</em> switching between Windows and various distros. Backing up data to floppies, then CDs, then DVDs. Often dual booting, but sometimes triple or quad booting on the same computer. Later on I purchased multiple computers to install even more operating systems.</p>
+<p>What started in 2005 as an interest in alternatives to Windows 98. Became formatting multiple computers on a weekly basis and annoying everyone about how Linux was going to change the world and everyone needed to try it out. Because it was the year of the Linux desktop (<em>remember when that was a thing people talked about?</em>)</p>
+<h3 id="Disenchantment"><a href="#Disenchantment" class="headerlink" title="Disenchantment"></a>Disenchantment</h3><p>Overtime I became increasing disenchanted with the idea of the Linux desktop. I was convinced the main issue with the Linux desktop was the inability to install multiple versions of the same package through package managers. Being unable to install multiple versions of the same package led to installed distributions becoming no longer compatible with newer applications, but it also meant that distributions were not fully backwards compatible. The user was in some kind of limbo.</p>
+<p>Oddly enough, Docker solved this issue by allowing processes to be started in a pseudo environment using the full user space binaries of other Linux distributions. Since the Linux kernel maintains backwards compatibility, all that needed to be replicated was the user space. Docker effectively solved the issue known as “dependency hell”.</p>
+<p>Before Docker existed, I would switch between distributions with alternating release cycles. Such as Fedora and Ubuntu. Switching between the two, sometimes meant getting newer packages, because their release cadences were off by roughly 3 months. Therefore 3 months after Ubuntu was released, Fedora would come out with newer packages. The constant desire to be running the latest packages and applications kept me formatting and installing new Linux distributions on a regular cadence.</p>
+<h3 id="Rolling-Release"><a href="#Rolling-Release" class="headerlink" title="Rolling Release"></a>Rolling Release</h3><p>There are multiple reasons for distribution hopping, but I would propose one of the main reasons being that users prefer to be running the latest packages available. They may not say this directly, but it becomes apparent when you notice that they are switching between entirely different distributions on a regular cadence.</p>
+<p>Never the less, one day while watching YouTube videos on Linux kernel development, I came across OpenSUSE Tumbleweed. Similar to Arch, OpenSUSE Tumbleweed is a rolling release distribution, but is upgraded less aggressively. Tumbleweed uses automated test suites to ensure breaking updates are less common, even with frequent updates. Since switching to Tumbleweed, I have had no inclination towards installing different distributions. Having formatted in December 2017 to move from Btrfs to Ext4, I have not never needed to reinstall since.</p>
+<h3 id="Distributions-are-not-special"><a href="#Distributions-are-not-special" class="headerlink" title="Distributions are not special"></a>Distributions are not special</h3><p>Most Linux distributions are roughly the same. Most use Systemd. They have a package manager that uses HTTP to pull compressed packages with files and scripts to copy and execute on the local machine. The packages are signed and normally from a trusted source. They use the same desktop environments and rendering systems. Their installers are roughly the same from a user facing level. etc… I could go on…</p>
+<p>There is little point in moving between Linux distributions, especially if they are merely derivatives of existing operating systems supported by major communities with funding. The point of an operating system is not to use the operating system, but to use the applications supported by the system. Operating systems do not do functional tasks. They provide support for doing functional tasks in applications. Applications perform the functional tasks. This could partially explain why Ubuntu became popular. Ubuntu got out of the way of users and made it easier to install applications.</p>
+<p>Linus Torvalds <a href="https://fossbytes.com/linus-torvalds-doesnt-use-ubuntu-linux-debian/" target="_blank" rel="noopener">said something similar</a> as he pointed out why he used Fedora. Because it was easy to install and use. He didn’t pay much attention to the Linux distribution. The distribution is not relevant. Applications are relevant. Linus wanted to use applications and develop the Linux kernel. Not play around with Linux distributions.</p>
+<h3 id="Tips-to-stop"><a href="#Tips-to-stop" class="headerlink" title="Tips to stop"></a>Tips to stop</h3><p>Hopefully you realise switching Linux distributions is usually pointless.</p>
+<p>If you are still distro hopping, I would recommend the following:</p>
+<ol>
+<li>Use a rolling release distribution<ul>
+<li>Use Docker when you must run applications created for other distributions.</li>
+</ul>
+</li>
+<li>Stop customizing your environment<ul>
+<li>Operating systems are meant for running applications. Installing themes or customizations is not a use case. It’s a form of procrastination.</li>
+</ul>
+</li>
+<li>Use your computer for performing tasks; as a means to an end<ul>
+<li>Treat your computer as a “Workstation”. Computers are meant to do work. Avoid using them as a mechanism for entertainment or time wasting.</li>
+</ul>
+</li>
+</ol>
+<p>Unfortunately I no longer have that TurboLinux disc anymore, but it holds an important part in my memory as not only the introduction to Linux, but as the precursor to what would become an interest in software development.</p>
+<p>Open Source opened up the idea of software development in a greater community and provided a much needed sense of purpose that sparked the beginning of a passion for building software.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://hekar.github.io/blog/2019/08/30/2019-08-30-how-I-stopped-hopping/" data-id="cjzzz10fl000010uy78ywm8rv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-2019-08-23-electron-vue" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/blog/2019/08/23/2019-08-23-electron-vue/" class="article-date">
@@ -183,92 +254,11 @@
 
 
   
-    <article id="post-2019-08-14-qcon-no-moore" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2019/08/14/2019-08-14-qcon-no-moore/" class="article-date">
-  <time datetime="2019-08-14T04:00:00.000Z" itemprop="datePublished">2019-08-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2019/08/14/2019-08-14-qcon-no-moore/">QCon - No Moore Left to Give</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p><a href="https://www.infoq.com/presentations/moore-law-expiring/" target="_blank" rel="noopener">No Moore Left to Give: Enterprise Computing after Moore’s Law</a></p>
-<p>This post is based on a <a href="https://www.infoq.com/qconnewyork2019/" target="_blank" rel="noopener">keynote presentation</a> by Bryan Cantrill and is <a href="https://www.infoq.com/presentations/moore-law-expiring/?itm_source=infoq&amp;itm_medium=popular_widget&amp;itm_campaign=popular_content_list&amp;itm_content=" target="_blank" rel="noopener">freely available on the InfoQ website.</a></p>
-</blockquote>
-<p><a href="https://www.youtube.com/results?search_query=bryan+cantrill" target="_blank" rel="noopener">Bryan Cantrill</a> is one of my favorite presenters, so I was excited to see that he’d be giving a keynote at QCon. For a long time, computer enthuasaists have been talking about the end of Moore’s law and what it means for computing. What Cantrill explains is that Moore’s law is close to ending, it’s not the end of the world, but developers aren’t going to get the “free” performance increases we’ve seen in the past.</p>
-<p>Bryan references three “laws” in his talk.</p>
-<p>The laws referenced are Dennard Scaling, Moore’s Law and Amdahl’s Law.</p>
-<p>What Bryan argues is that Moore’s Law is nearing its end and transistor sizes below 7nm are going to be more expensive and yield less benefits going forward. Programmers have become accustomed to computers becoming faster and cheaper every year, but this may no longer be the case.</p>
-<p>I will quickly go over the three laws referenced by Cantrill in his talk.</p>
-<h3 id="Dennard-Scaling"><a href="#Dennard-Scaling" class="headerlink" title="Dennard Scaling"></a>Dennard Scaling</h3><p>From Wikipedia: <a href="https://en.wikipedia.org/wiki/Dennard_scaling" target="_blank" rel="noopener">wiki/Dennard_scaling</a></p>
-<blockquote>
-<p>Dennard scaling, also known as MOSFET scaling, is a scaling law based on a 1974 paper co-authored by Robert H. Dennard, after whom it is named. Originally formulated for MOSFETs, it states, roughly, that as transistors get smaller, their power density stays constant, so that the power use stays in proportion with area; both voltage and current scale (downward) with length.</p>
-</blockquote>
-<p>Dennard scaling meant that processors could go faster simply by increasing the frequency. From 100Mhz to 2GHz to 3GHz and so on. Frequency increases broke down somewhere in 2005 - 2007, due to “current leakage” which caused increased chip heat and power consumption. Afterwards, chip manufacturers began adding additional cores, instead of optimizing for increased frequencies.</p>
-<h3 id="Moore’s-Law"><a href="#Moore’s-Law" class="headerlink" title="Moore’s Law"></a>Moore’s Law</h3><p>From Wikipedia: <a href="https://en.wikipedia.org/wiki/Moore%27s_law" target="_blank" rel="noopener">wiki/Moores_law</a></p>
-<blockquote>
-<p>Moore’s law is the observation that the number of transistors in a dense integrated circuit doubles about every two years. The observation is named after Gordon Moore, the co-founder of Fairchild Semiconductor and CEO of Intel, whose 1965 paper described a doubling every year in the number of components per integrated circuit, and projected this rate of growth would continue for at least another decade. In 1975 looking forward to the next decade, he revised the forecast to doubling every two years, a compound annual growth rate (CAGR) of 41.4%.</p>
-</blockquote>
-<p>Unlike Dennard’s Scaling, the definition of Moore’s Law has less of a consenus. People are still debating exactly what the law covers. Cantrill defines Moore’s Law a differently from the summary on Wikipedia. He uses references found in various interviews, articles and books to piece together what he thinks Moore’s Law means.</p>
-<p>From his <a href="https://www.slideshare.net/bcantrill/no-moore-left-to-give-enterprise-computing-after-moores-law" target="_blank" rel="noopener">slides</a></p>
-<blockquote>
-<p>“…for many years, Moore’s Law could be inferred to the doublings of density, speed and economics…”</p>
-</blockquote>
-<p>Moore’s Law accounts for more than the doubling of density, which could theoritically be achieved at the cost of economics (moving to a more expensive material) or speed.</p>
-<p>Cantrill argues that processors had become higher density, while also becoming cheaper for both manufacturers and consumers. This changed around 2015 when processors began becoming more expensive with each additional generation, even though transistor nodes had shrunk in size.</p>
-<h3 id="Amdahl’s-Law"><a href="#Amdahl’s-Law" class="headerlink" title="Amdahl’s Law"></a>Amdahl’s Law</h3><p>From Wikipedia: <a href="https://en.wikipedia.org/wiki/Amdahl%27s_law" target="_blank" rel="noopener">wiki/Amdahls_law</a></p>
-<blockquote>
-<p>In computer architecture, Amdahl’s law (or Amdahl’s argument[1]) is a formula which gives the theoretical speedup in latency of the execution of a task at fixed workload that can be expected of a system whose resources are improved. It is named after computer scientist Gene Amdahl, and was presented at the AFIPS Spring Joint Computer Conference in 1967.</p>
-</blockquote>
-<p>The most interesting of the “laws” is “Amdahl’s Law” which refers to parallelism and the potiential speed improvements that can be gained by increasing core counts for a particular application.</p>
-<p>Amdahl’s refers to the speedup that can be expected from parallel computations as limited by the sequentional portion of the application. Applications can be divided into sequential and parallel portions, of which _P_ defines the percentage of the application that executes in parallel.</p>
-<p>The Wikipedia image shows the potential speedup with each additional core. The lines denote differing values for _P_ (50%, 75%, 90% and 95%).<br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AmdahlsLaw.svg/1280px-AmdahlsLaw.svg.png" alt="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/AmdahlsLaw.svg/1280px-AmdahlsLaw.svg.png"></p>
-<p>The graph shows that an application with a 50% parallelized portion (such as Google Chrome) will not benefit from anymore than 16 processor cores. An application with 90% parallization will not benefit from more than 512 processor cores.</p>
-<p>There’s an informative video by <a href="https://www.youtube.com/watch?v=eJBOU23L720&amp;t=442" target="_blank" rel="noopener">Coreteks</a> titled <a href="https://www.youtube.com/watch?v=eJBOU23L720&amp;t=442" target="_blank" rel="noopener">Hardware trends: How many cores do we need?!</a> where he succinctly explains Amdahl’s law and how it relates to CPUs, GPUs, ASICs and FPGAs. In the video he states that GPUs, ASICs and FPGAs are not necessarily solutions to CPU performance issues as they all suffer from Amdahl’s law. Once a commonly performed tasks have a specialized ASIC created, there is not much that can be done beyond the hardware optimization work we’ve seen in the past. Transistor size reductions providing ~40% performance improvements every two years will no longer be the case. And tasks which cannot be fully parallelized will not benefit from being executed across many cores. Hence software developers will have to become more accustomed to optimizing their applications again.</p>
-<h3 id="Microservices"><a href="#Microservices" class="headerlink" title="Microservices"></a>Microservices</h3><p>One consequence of Moore’s Law ending is the proliferation of computing across many devices and computers. CPU computation will become distributed and closer to where it is needed. This is seen in the proliferation of IoT applications we have been seeing.</p>
-<p>Part of this has been the push towards microservices. Microservice oriented architectures have the potential to suffer from the same constraints around scaling as Amdahl’s law.</p>
-<p>Though data is normally partitioned (ideally by more than the tenant), sometimes there’s ends up being shared resources where data must be processed sequentially. These portions of the application can be rather difficult to scale.</p>
-<p>What percentage of a user’s request can be parallized in a distributed system? Are there transactions that need to occur? What about costly shared infrastructure such as queues or event streams?</p>
-<p>If a request must go through a shared linear queue in a distributed system, this may limit how effective simply scaling the components around the queue will be.</p>
-<p>When architecting distributed systems, careful consideration must be made about shared state if one wants to effectively understand how their system will scale. Simply increasing the number of web servers one has when their file storage is the bottleneck is not effective and can be counter productive.</p>
-<h3 id="Future-technologies"><a href="#Future-technologies" class="headerlink" title="Future technologies"></a>Future technologies</h3><p>There are many technologies in the pipeline of chip manufacturers including 2.5D and 3D packaging which allow for the addition of memory, ASICs, GPUs and other chiplets to be included on processor dies. By including these chiplets on processor dies, the amount of energy and time required to transfer data can be reduced. Making previously high latency tasks feasible in high performance computing.</p>
-<p>Other technologies include asymethic processing cores, where CPU cores are designed for different tasks. One core may be designed for high performance single threaded applications such as web browsers, while other cores will be designed for parallizable vector computables used by graphics or video editing applications.</p>
-<p>There are still improvements that can be made at the power and IPC level, but they will require changes in software and operating systems.</p>
-<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>The take away from Cantrill’s presentation is that computers aren’t going to get <em>much</em> faster <strong><em>and</em></strong> cheaper from here. We will see some improvements in the amount of cores packed into a machine, but this may come at the cost of heat, price and memory latency.</p>
-<p>The real outcome is going to be the proliferation of more computers being used in areas we previously did not expect and larger distributed systems being built across slower commodity hardware.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://hekar.github.io/blog/2019/08/14/2019-08-14-qcon-no-moore/" data-id="cjzoo22ov001hwcuyfonwy5zu" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
   <nav id="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/blog/page/2/">2</a><a class="page-number" href="/blog/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/5/">5</a><a class="extend next" rel="next" href="/blog/page/2/">Next &raquo;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/blog/page/2/">2</a><a class="page-number" href="/blog/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/6/">6</a><a class="extend next" rel="next" href="/blog/page/2/">Next &raquo;</a>
   </nav>
 
 </section>

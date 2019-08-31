@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://hekar.github.io/blog/"/>
-  <updated>2019-08-23T21:46:09.625Z</updated>
+  <updated>2019-08-31T20:25:19.908Z</updated>
   <id>https://hekar.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>How I Stopped Distro Hopping</title>
+    <link href="https://hekar.github.io/blog/2019/08/30/2019-08-30-how-I-stopped-hopping/"/>
+    <id>https://hekar.github.io/blog/2019/08/30/2019-08-30-how-I-stopped-hopping/</id>
+    <published>2019-08-30T04:00:00.000Z</published>
+    <updated>2019-08-31T20:25:19.908Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Since 2005 I had been attempting to stick to a single installation of any Linux Desktop Distribution. Whether it was Mandrake, Debian,
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Electron, Vue.js and Vuetify Guide</title>
