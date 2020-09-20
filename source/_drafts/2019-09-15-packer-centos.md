@@ -5,18 +5,17 @@ title: Packer CentOS
 author: hkhani
 ---
 
-[Packer][packer] is an open source [Go][golang] based tool created by [Hashicorp][hashicorp] for building consistent machine images for numerous platforms. These platforms include [AWS EC2][aws-ec2], [Azure][azure], [Google Cloud][google-cloud], [qemu], [VirtualBox][virtualbox] and even [Docker][docker]. Packer is available on many platforms and is distributed as a binary, distribution package or can be built from source. 
+[Packer][packer] is an open source [Go][golang] based tool created by [Hashicorp][hashicorp] for building consistent machine images for multiple platforms. Platforms such as [AWS EC2][aws-ec2], [Azure][azure], [Google Cloud][google-cloud], [qemu], [VirtualBox][virtualbox] and [Docker][docker]. Packer is available for Windows, Linux and macOS.
 
-Packer produces outputs based on [Builders][builders]. [Builders][builders] produce images for various machine formats. These images are then loaded into their respective to service to run [Provisioners][provisioners] against which customize the image for further usage. The final phase executed by Packer is [Post-Processors][post-processors] which can be used for re-packaging, publishing to repositories, Vagrant configurations, etc.
+Packer produces outputs based on [Builders][builders]. [Builders][builders] produce images for various machine formats. These images are then loaded into their respective to service to run [Provisioners][provisioners] which customize the created image. The final phase executed by Packer is [Post-Processors][post-processors] which can be used for re-packaging, publishing to repositories, Vagrant or some other final build step.
 
 > Builder -> Provisioner -> Post-Processor
-
 
 ### Why Packer?
 
 Packer can be useful when designing machine images for applications being continuously deployed.
 
-The benefits from packer versus manually creating are numerous, but the main 
+The benefits from packer versus manually creation are many, but the prevalent benefits are:
 
 ##### Continuous Delivery
 
@@ -65,8 +64,12 @@ Run and output:
 
 ### Conclusion
 
+For a complete build of CentOS with KVM images check out my github repo: [hekar/packer-centos]
+
+
 
 [packer]: https://packer.io
+[hekar/packer-centos]: https://github.com/hekar/packer-centos
 [hashicorp]: https://www.hashicorp.com
 [builders]: https://packer.io/docs/builders/index.html
 [provisioners]: https://packer.io/docs/provisioners/index.html

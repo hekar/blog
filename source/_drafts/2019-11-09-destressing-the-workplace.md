@@ -1,11 +1,11 @@
 ---
 layout: post
 date: 2019-11-09
-title: How to Not Collapse at 5PM
+title: Destressing the workplace
 author: hkhani
 ---
 
-How to not collapse at 5PM
+Many software developers complain of stressful work environments. These are a few observations of things developers can be inadvertently
 
 Lately I've had a lot of people ask me exactly what I do for work. For the longest time I've had difficulty answering this question, but recently I've found an analogy. Programming is like writing a book.
 

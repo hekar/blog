@@ -5,7 +5,7 @@ title: Compiling Source SDK on Linux
 author: hkhani
 ---
 
-The [Source SDK](https://en.wikipedia.org/wiki/Source_\(game_engine\)#Source_SDK) is a fork of Valve's internal [Perforce](https://en.wikipedia.org/wiki/Perforce) repository containing the application code they use to build Valve's games based on the Source 1 engine. Games such as [Counter Strike: Source](https://en.wikipedia.org/wiki/Counter-Strike:_Source), [Team Fortress 2](https://en.wikipedia.org/wiki/Team_Fortress_2) and [Half-Life 2](https://en.wikipedia.org/wiki/Half-Life_2).
+The [Source SDK](https://half-life.fandom.com/wiki/Source_SDK) is a fork of Valve's internal [Perforce](https://en.wikipedia.org/wiki/Perforce) repository containing the application code they use to build Valve's games based on the Source 1 engine. Games such as [Counter Strike: Source](https://en.wikipedia.org/wiki/Counter-Strike:_Source), [Team Fortress 2](https://en.wikipedia.org/wiki/Team_Fortress_2) and [Half-Life 2](https://en.wikipedia.org/wiki/Half-Life_2).
 
 The SDK [available on Github](https://github.com/ValveSoftware/source-sdk-2013/) is primarily based on [Half-life 2](https://en.wikipedia.org/wiki/Half-Life_2), while other games are removed from the repository before they are exported to Github.
 

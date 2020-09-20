@@ -115,13 +115,10 @@ The results of the build process will be visible in `./build/` and will depend o
 
 Supported target formats are:
 
-> **All platforms:** 7z, zip, tar.xz, tar.lz, tar.gz, tar.bz2, dir (unpacked directory).
->
-> **macOS:** dmg, pkg, mas, mas-dev.
->
-> **Linux:** AppImage, snap, debian package (deb), rpm, freebsd, pacman, p5p, apk.
->
-> **Windows:** nsis (Installer), nsis-web (Web installer), portable (portable app without installation), AppX (Windows Store), Squirrel.Windows.
+- **All platforms:** 7z, zip, tar.xz, tar.lz, tar.gz, tar.bz2, dir (unpacked directory).
+- **Windows:** nsis (Installer), nsis-web (Web installer), portable (portable app without installation), AppX (Windows Store), Squirrel.Windows.
+- **Linux:** AppImage, snap, debian package (deb), rpm, freebsd, pacman, p5p, apk.
+- **macOS:** dmg, pkg, mas, mas-dev.
 
 From the [electron-builder] documentation
 
