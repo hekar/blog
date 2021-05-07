@@ -1,296 +1,70 @@
-<!DOCTYPE html>
-<html>
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
-  
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"/><link rel="manifest" href="/favicon/site.webmanifest"/><link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#000000"/><link rel="shortcut icon" href="/favicon/favicon.ico"/><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-config" content="/favicon/browserconfig.xml"/><meta name="theme-color" content="#000"/><link rel="alternate" type="application/rss+xml" href="/feed.xml"/><meta name="description" content="A statically generated blog example using Next.js and Markdown."/><meta property="og:image" content="https://og-image.vercel.app/Next.js%20Blog%20Starter%20Example.png?theme=light&amp;md=1&amp;fontSize=100px&amp;images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg"/><title>Next.js Blog Example with Markdown</title><meta name="next-head-count" content="15"/><link rel="preload" href="/_next/static/css/a39f38d88d9ad441c8d0.css" as="style"/><link rel="stylesheet" href="/_next/static/css/a39f38d88d9ad441c8d0.css" data-n-g=""/><noscript data-n-css=""></noscript><link rel="preload" href="/_next/static/chunks/webpack-d9b892422ee32762e120.js" as="script"/><link rel="preload" href="/_next/static/chunks/framework-45e9b849801d11e9c054.js" as="script"/><link rel="preload" href="/_next/static/chunks/commons-e1087fd52b866fc516e6.js" as="script"/><link rel="preload" href="/_next/static/chunks/main-5d758df2dffcf497d56f.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/_app-841f7939ab4d644b6735.js" as="script"/><link rel="preload" href="/_next/static/chunks/853-d37cfdc4604a543e18de.js" as="script"/><link rel="preload" href="/_next/static/chunks/pages/index-49135e51c04ae5e455c9.js" as="script"/></head><body><div id="__next"><div class="min-h-screen"><div class="border-b bg-accent-1 border-accent-2"><div class="container mx-auto px-5"><div class="py-2 text-center text-sm">Created with<!-- --> <a href="https://github.com/vercel/next.js/tree/canary/examples/blog-starter-typescript" class="underline hover:text-success duration-200 transition-colors">Next.js</a>.</div></div></div><main><div class="container mx-auto px-5"><div class="divide-y-4 divide-black-600 divide-solid"><section class="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12"><h1 class="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">Hekar&#x27;s Log</h1><h4 class="text-center md:text-left text-xl mt-5 md:pl-8">Mov patterns masquerading as complex systems</h4></section><section><div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32 mt-8"><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2020-09-22-dotcover-dotnetcore">Dotcover in Dotnet Core</a></h3><div class="text-lg mb-4"><time dateTime="2020-09-22">September	22, 2020</time></div><p class="text-lg leading-relaxed mb-4">
+Code coverage can be a useful heuristic for determining whether code is adequately executed by a given set of unit tests.
 
-  
-  <title>Hekar Khani</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hekar Khani">
-<meta property="og:url" content="https://hekar.github.io/blog/index.html">
-<meta property="og:site_name" content="Hekar Khani">
-<meta property="og:locale" content="en">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hekar Khani">
-  
-    <link rel="alternate" href="/blog/atom.xml" title="Hekar Khani" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/blog/css/style.css">
-</head>
-</html>
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/blog/" id="logo">Hekar Khani</a>
-        <span id="subtitle">Mov instructions masquerading as complex systems</span>
-      </h1>
-      
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/blog/">Home</a>
-        
-          <a class="main-nav-link" href="/blog/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/blog/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://hekar.github.io/blog"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-2019-08-30-how-I-stopped-hopping" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2019/08/30/2019-08-30-how-I-stopped-hopping/" class="article-date">
-  <time datetime="2019-08-30T04:00:00.000Z" itemprop="datePublished">2019-08-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2019/08/30/2019-08-30-how-I-stopped-hopping/">How I Stopped Distro Hopping</a>
-    </h1>
-  
+Tooling that produces code coverage will never be able to inform you how well your assertions are executed or if the given execution is necessary, but they will you an about whether a portion of code is covered by tests at all.
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Since 2005 I had been attempting to stick to a single installation of any Linux Desktop Distribution. Whether it was Mandrake, Debian, Slackware, Ubuntu, Fedora, SUSE, Mepis or any one of the many Linux distributions I was constantly switching between. Even Windows would periodically be installed onto one of many computers.</p>
-<p>It took until 2017 to <em>finally</em> cease the time waster known as “distro hopping”. Why did it take so long to stick with a single Linux distribution? Partially, I would argue that most Linux distribution releases were not stable enough until recently. There’d always been the promise of an easy to use, yet stable and up to date distribution that never existed. But the majority of the blame could be placed on my usage of the operating system, rather than the operating systems itself. The issue was how I approached computer usage in general. Fundamentally computers are meant to be programmed to perform useful tasks rather than tools of entertainment.</p>
-<h3 id="How-it-started"><a href="#How-it-started" class="headerlink" title="How it started"></a>How it started</h3><p>I still remember getting my first computer at age 9 and finding <em>TurboLinux Workstation 6.0 Lite</em> in my brother’s stack of games discarded in the drawer. Most of the discs were part of the sim games collection, from cereal boxes, demo discs, need for speed or other miscellaneous games from the 1990s. The TurboLinux CD was different. <a href="https://twitter.com/thunderdabest1/status/1048572202965196800" target="_blank" rel="noopener">Only black, yellow and white</a> were used to print the large font and lightning bolt on the stamped compact disc. The branding did nothing to stand out and looked mysterious to my younger self that’d never seen anything but the vibrant imagery of PC game discs.</p>
-<p>TurboLinux stayed in that drawer for years until one day I decided to take it out. One day, while looking for images of Windows 3.11 through Google which proved fruitless. I decided to try a different operating system. Probably, because I had too much time as a child and had exhausted all the Control Panel options in Windows 98. Being unable to find older versions of Windows, I went to the drawer to see what this TurboLinux disc was… After 3 days of attempting to install and log into the system, I had succeeded. The primary issue being the login screen on first boot. Username and Password which fortunately another user with the issue posted on <a href="https://www.linuxquestions.org" target="_blank" rel="noopener">linuxquestions.org</a>. <code>root</code> and the <code>root</code> password entered during installation were required to login.</p>
-<p>Although I successfully installed TurboLinux, loaded KDE and Gnome, I never did get the WinModem in my 450MHz Compaq Pentium 2 to work with. Installation of the driver required recompilation of the kernel which was too difficult for myself at the time.</p>
-<p>Getting TurboLinux installed peeked my interest as the only alternative I’d known had been the unreliable Windows 98. Since using the PlayStation more than the PC for gaming, support for video games wasn’t a concern. <a href="https://distrowatch.com" target="_blank" rel="noopener">Distrowatch</a>, <a href="https://www.osnews.com" target="_blank" rel="noopener">OSNews</a> and even <a href="http://slashdot.org/" target="_blank" rel="noopener">Slashdot</a> has become my most frequented sites at the time.</p>
-<h3 id="Where-do-I-find-the-Perfect-Linux-Distribution"><a href="#Where-do-I-find-the-Perfect-Linux-Distribution" class="headerlink" title="Where do I find the Perfect Linux Distribution?"></a>Where do I find the Perfect Linux Distribution?</h3><p>Even without broadband internet, distribution hopping was still within reach. Ordering discs could be online with a credit card. At the time I had ordered Mandrake 9.2, Mandrake 10, collections with Debian, Slackware, Fedora Core, SUSE 9.1 Personal, Knoppix. Some distributions such as Debian were over 12 CDs.</p>
-<p>For the following years, nearly every 2 weeks, I would spend <em>hours</em> switching between Windows and various distros. Backing up data to floppies, then CDs, then DVDs. Often dual booting, but sometimes triple or quad booting on the same computer. Later on I purchased multiple computers to install even more operating systems.</p>
-<p>What started in 2005 as an interest in alternatives to Windows 98. Became formatting multiple computers on a weekly basis and annoying everyone about how Linux was going to change the world and everyone needed to try it out. Because it was the year of the Linux desktop (<em>remember when that was a thing people talked about?</em>)</p>
-<h3 id="Disenchantment"><a href="#Disenchantment" class="headerlink" title="Disenchantment"></a>Disenchantment</h3><p>Overtime I became increasing disenchanted with the idea of the Linux desktop. I was convinced the main issue with the Linux desktop was the inability to install multiple versions of the same package through package managers. Being unable to install multiple versions of the same package led to installed distributions becoming no longer compatible with newer applications, but it also meant that distributions were not fully backwards compatible. The user was in some kind of limbo.</p>
-<p>Oddly enough, Docker solved this issue by allowing processes to be started in a pseudo environment using the full user space binaries of other Linux distributions. Since the Linux kernel maintains backwards compatibility, all that needed to be replicated was the user space. Docker effectively solved the issue known as “dependency hell”.</p>
-<p>Before Docker existed, I would switch between distributions with alternating release cycles. Such as Fedora and Ubuntu. Switching between the two, sometimes meant getting newer packages, because their release cadences were off by roughly 3 months. Therefore 3 months after Ubuntu was released, Fedora would come out with newer packages. The constant desire to be running the latest packages and applications kept me formatting and installing new Linux distributions on a regular cadence.</p>
-<h3 id="Rolling-Release"><a href="#Rolling-Release" class="headerlink" title="Rolling Release"></a>Rolling Release</h3><p>There are multiple reasons for distribution hopping, but I would propose one of the main reasons being that users prefer to be running the latest packages available. They may not say this directly, but it becomes apparent when you notice that they are switching between entirely different distributions on a regular cadence.</p>
-<p>Never the less, one day while watching YouTube videos on Linux kernel development, I came across OpenSUSE Tumbleweed. Similar to Arch, OpenSUSE Tumbleweed is a rolling release distribution, but is upgraded less aggressively. Tumbleweed uses automated test suites to ensure breaking updates are less common, even with frequent updates. Since switching to Tumbleweed, I have had no inclination towards installing different distributions. Having formatted in December 2017 to move from Btrfs to Ext4, I have not never needed to reinstall since.</p>
-<h3 id="Distributions-are-not-special"><a href="#Distributions-are-not-special" class="headerlink" title="Distributions are not special"></a>Distributions are not special</h3><p>Most Linux distributions are roughly the same. Most use Systemd. They have a package manager that uses HTTP to pull compressed packages with files and scripts to copy and execute on the local machine. The packages are signed and normally from a trusted source. They use the same desktop environments and rendering systems. Their installers are roughly the same from a user facing level. etc… I could go on…</p>
-<p>There is little point in moving between Linux distributions, especially if they are merely derivatives of existing operating systems supported by major communities with funding. The point of an operating system is not to use the operating system, but to use the applications supported by the system. Operating systems do not do functional tasks. They provide support for doing functional tasks in applications. Applications perform the functional tasks. This could partially explain why Ubuntu became popular. Ubuntu got out of the way of users and made it easier to install applications.</p>
-<p>Linus Torvalds <a href="https://fossbytes.com/linus-torvalds-doesnt-use-ubuntu-linux-debian/" target="_blank" rel="noopener">said something similar</a> as he pointed out why he used Fedora. Because it was easy to install and use. He didn’t pay much attention to the Linux distribution. The distribution is not relevant. Applications are relevant. Linus wanted to use applications and develop the Linux kernel. Not play around with Linux distributions.</p>
-<h3 id="Tips-to-stop"><a href="#Tips-to-stop" class="headerlink" title="Tips to stop"></a>Tips to stop</h3><p>Hopefully you realise switching Linux distributions is usually pointless.</p>
-<p>If you are still distro hopping, I would recommend the following:</p>
-<ol>
-<li>Use a rolling release distribution<ul>
-<li>Use Docker when you must run applications created for other distributions.</li>
-</ul>
-</li>
-<li>Stop customizing your environment<ul>
-<li>Operating systems are meant for running applications. Installing themes or customizations is not a use case. It’s a form of procrastination.</li>
-</ul>
-</li>
-<li>Use your computer for performing tasks; as a means to an end<ul>
-<li>Treat your computer as a “Workstation”. Computers are meant to do work. Avoid using them as a mechanism for entertainment or time wasting.</li>
-</ul>
-</li>
-</ol>
-<p>Unfortunately I no longer have that TurboLinux disc anymore, but it holds an important part in my memory as not only the introduction to Linux, but as the precursor to what would become an interest in software development.</p>
-<p>Open Source opened up the idea of software development in a greater community and provided a much needed sense of purpose that sparked the beginning of a passion for building software.</p>
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2020-09-19-coding-is-writing">Coding is writing</a></h3><div class="text-lg mb-4"><time dateTime="2020-09-19">September	19, 2020</time></div><p class="text-lg leading-relaxed mb-4">
+Recently a friend asked what I do for a living. For the longest time I'd had difficulty answering this question. Somehow in that moment I realized we're similar to writers.
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://hekar.github.io/blog/2019/08/30/2019-08-30-how-I-stopped-hopping/" data-id="cjzzz10fl000010uy78ywm8rv" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2019-08-30-stop-distro-hopping">Stop Distro Hopping</a></h3><div class="text-lg mb-4"><time dateTime="2019-08-30">August	30, 2019</time></div><p class="text-lg leading-relaxed mb-4">
+From 2005 to 2017, I hadn't been able to stick to a single installation of any Linux Desktop Distribution. Whether it was Mandrake, Debian, Slackware, Ubuntu, Fedora, SUSE, Mepis or any of the many Linux distributions I switched between. Even Windows would periodically be installed onto one of many computers.
 
+It took until 2017 for me to settle. On OpenSUSE Tumbleweed. Why did it take so long? I would argue that it was not entirely my fault. That most Linux distributions were not stable enough. Until recently there'd been the promise of an easy to use, yet stable and up to date distribution that'd never came to fruition.
 
-  
-    <article id="post-2019-08-23-electron-vue" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2019/08/23/2019-08-23-electron-vue/" class="article-date">
-  <time datetime="2019-08-23T04:00:00.000Z" itemprop="datePublished">2019-08-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2019/08/23/2019-08-23-electron-vue/">Electron, Vue.js and Vuetify Guide</a>
-    </h1>
-  
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2019-08-23-electron-vue">Electron, Vue.js and Vuetify Guide</a></h3><div class="text-lg mb-4"><time dateTime="2019-08-23">August	23, 2019</time></div><p class="text-lg leading-relaxed mb-4">
+This post is a quick tutorial on how to create an electron-vue] application with the vuetify library. The resulting application will bundles into Windows, macOS and Linux binaries.
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>This post is a quick tutorial on how to create an <a href="https://github.com/SimulatedGREG/electron-vue" target="_blank" rel="noopener">electron-vue</a> application with the <a href="https://vuetifyjs.com" target="_blank" rel="noopener">vuetify</a> library. The resulting application will bundles into Windows, macOS and Linux binaries.</p>
-<p>Disclaimer: The included version of <a href="https://electronjs.org" target="_blank" rel="noopener">electron</a> with <a href="https://github.com/SimulatedGREG/electron-vue" target="_blank" rel="noopener">electron-vue</a> is rather dated. There are defects in the version of electron shipped with electron-vue. Upgrading the version of electron is a difficult undertaking and may not be worthwhile. The end of this post contains links to various resources that can provide more update to date environments. Updating electron can be important if you are building a security sensitive application or using the application to browse external websites.</p>
-<p>If you want to skip the tutorial and simply download the template, it can be found here: <a href="https://github.com/hekar/electron-vue-starter" target="_blank" rel="noopener">https://github.com/hekar/electron-vue-starter</a></p>
-<h5 id="Install-dependencies"><a href="#Install-dependencies" class="headerlink" title="Install dependencies"></a>Install dependencies</h5><p>Install <a href="https://github.com/vuejs/vue-cli" target="_blank" rel="noopener">vue-cli</a> and <a href="https://madewithvuejs.com/electron-vue" target="_blank" rel="noopener">electron-vue</a> to get started<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm install -g vue-cli</span><br><span class="line">vue init simulatedgreg/electron-vue electron-vue-starter</span><br><span class="line"></span><br><span class="line">npm install -g yarn</span><br><span class="line">cd electron-vue-starter</span><br><span class="line">yarn install</span><br></pre></td></tr></table></figure></p>
-<h5 id="Install-Vuetify"><a href="#Install-Vuetify" class="headerlink" title="Install Vuetify"></a>Install Vuetify</h5><p>Add the dependency for vuetify 2.x and material design fonts<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add vuetify@^2.0.1 @mdi/font</span><br></pre></td></tr></table></figure></p>
-<p>Edit <code>src/renderer/main.js</code> to use include Vuetify in the list of plugins</p>
-<p>Add the following<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vuetify <span class="keyword">from</span> <span class="string">'vuetify'</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'@mdi/font/css/materialdesignicons.min.css'</span></span><br><span class="line"><span class="keyword">import</span> <span class="string">'vuetify/dist/vuetify.min.css'</span></span><br><span class="line"></span><br><span class="line">Vue.use(Vuetify)</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> vue = <span class="keyword">new</span> Vue(&#123;</span><br><span class="line">  ...</span><br><span class="line">  vuetify: <span class="keyword">new</span> Vuetify(&#123;&#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
-<h5 id="Configure-Vuetify-theme"><a href="#Configure-Vuetify-theme" class="headerlink" title="Configure Vuetify theme"></a>Configure Vuetify theme</h5><p>Default to the light theme by disabling dark mode</p>
-<p>Edit <code>src/renderer/App.vue</code><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  name: <span class="string">'electron-vue-starter'</span>,</span><br><span class="line">  created () &#123;</span><br><span class="line">    <span class="keyword">this</span>.$vuetify.theme.dark = <span class="literal">false</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h5 id="Whitelist-Vuetify"><a href="#Whitelist-Vuetify" class="headerlink" title="Whitelist Vuetify"></a>Whitelist Vuetify</h5><p>This is the easiest step to overlook. Add <code>vuetify</code> to the <code>whiteListedModules</code> list, so that it will be included in the webpack bundle.</p>
-<p>Edit <code>.electron-vue/webpack.renderer.config.js</code></p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> whiteListedModules = [<span class="string">'vue'</span>, <span class="string">'vuetify'</span>]</span><br></pre></td></tr></table></figure>
-<h5 id="Start-the-electron-app"><a href="#Start-the-electron-app" class="headerlink" title="Start the electron app"></a>Start the electron app</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn run dev</span><br></pre></td></tr></table></figure>
-<p>Debug using port 5858 in Google Chrome or Node Inspector for the server side portion of the application or press <code>Shift + Ctrl + I</code> for internal devtools in Electron for editing the web rendering portion.</p>
-<h5 id="Create-your-first-view"><a href="#Create-your-first-view" class="headerlink" title="Create your first view"></a>Create your first view</h5><p>Edit <code>src/renderer/components/LandingPage.vue</code></p>
-<p>Replace<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">"wrapper"</span>&gt;</span><br><span class="line">  ...</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>With<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=<span class="string">"wrapper"</span>&gt;</span><br><span class="line">  &lt;v-card</span><br><span class="line">      max-width=<span class="string">"344"</span></span><br><span class="line">      <span class="class"><span class="keyword">class</span></span>=<span class="string">"mx-auto"</span></span><br><span class="line">  &gt;</span><br><span class="line">      &lt;v-card-title&gt;My First electron-vue App&lt;<span class="regexp">/v-card-title&gt;</span></span><br><span class="line"><span class="regexp">      &lt;v-card-text&gt;This is awesome!&lt;/</span>v-card-text&gt;</span><br><span class="line">      &lt;v-card-actions&gt;</span><br><span class="line">      &lt;v-btn text&gt;Click Here&lt;<span class="regexp">/v-btn&gt;</span></span><br><span class="line"><span class="regexp">      &lt;/</span>v-card-actions&gt;</span><br><span class="line">  &lt;<span class="regexp">/v-card&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>div&gt;</span><br></pre></td></tr></table></figure></p>
-<h5 id="Package-the-electron-app"><a href="#Package-the-electron-app" class="headerlink" title="Package the electron app"></a>Package the electron app</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn run build</span><br></pre></td></tr></table></figure>
-<p>The results of the build process will be visible in <code>./build/</code> and will depend on your platform. Cross platform compilation is not supported, so you will need the target operating system to compile that release.</p>
-<p>Supported target formats are:</p>
-<blockquote>
-<p><strong>All platforms:</strong> 7z, zip, tar.xz, tar.lz, tar.gz, tar.bz2, dir (unpacked directory).</p>
-<p><strong>macOS:</strong> dmg, pkg, mas, mas-dev.</p>
-<p><strong>Linux:</strong> AppImage, snap, debian package (deb), rpm, freebsd, pacman, p5p, apk.</p>
-<p><strong>Windows:</strong> nsis (Installer), nsis-web (Web installer), portable (portable app without installation), AppX (Windows Store), Squirrel.Windows.</p>
-</blockquote>
-<p>From the <a href="https://www.electron.build" target="_blank" rel="noopener">electron-builder</a> documentation</p>
-<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>Getting started with electron-vue and vuetify is fairly simple, though there are issues that require workarounds. Changes such as adding the vuetify module to the <code>whitelist</code> collection are easy to miss. <a href="https://madewithvuejs.com/electron-vue" target="_blank" rel="noopener">electron-vue</a> is a little out of date, so in a follow up post, I will go over how to configure electron, <a href="https://www.electron.build" target="_blank" rel="noopener">electron-builder</a>, <a href="https://github.com/vuejs/vue" target="_blank" rel="noopener">vue</a> and <a href="https://vuetifyjs.com" target="_blank" rel="noopener">vuetify</a> from scratch. I will also go over <a href="https://github.com/michalzaq12/electron-nuxt" target="_blank" rel="noopener">electron-nuxt</a> which is a project looking to replace <a href="https://madewithvuejs.com/electron-vue" target="_blank" rel="noopener">electron-vue</a>.</p>
-<p>For now, <a href="https://madewithvuejs.com/electron-vue" target="_blank" rel="noopener">electron-vue</a> is still a great project and highly recommended for users that wish to quickly create desktop applications with <a href="https://electronjs.org" target="_blank" rel="noopener">electron</a>, <a href="https://github.com/vuejs/vue" target="_blank" rel="noopener">vue</a> and <a href="https://vuetifyjs.com" target="_blank" rel="noopener">vuetify</a>.</p>
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2019-08-17-source-sdk-linux">Compiling Source SDK on Linux</a></h3><div class="text-lg mb-4"><time dateTime="2019-08-17">August	17, 2019</time></div><p class="text-lg leading-relaxed mb-4">
+The Source SDK is a fork of Valve's internal Perforce repository containing the application code they use to build Valve's games based on the Source 1 engine. Games such as Counter Strike: Source, Team Fortress 2 and Half-Life 2.
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://hekar.github.io/blog/2019/08/23/2019-08-23-electron-vue/" data-id="cjzoo22mz0001wcuyv4kbyku5" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2019-08-14-qcon-no-moore">QCon - No Moore Left to Give</a></h3><div class="text-lg mb-4"><time dateTime="2019-08-14">August	14, 2019</time></div><p class="text-lg leading-relaxed mb-4">
+Bryan Cantrill is one of my favorite presenters, so I was excited to see that he'd be giving a keynote at QCon. For a long time, computer enthuasaists have been talking about the end of Moore's law and what it means for computing. What Cantrill explains is that Moore's law is close to ending, it's not the end of the world, but developers aren't going to get the "free" performance increases we've seen in the past.
 
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2016-09-23-quality-code-reviews">Quality Code Reviews</a></h3><div class="text-lg mb-4"><time dateTime="2016-09-23">September	23, 2016</time></div><p class="text-lg leading-relaxed mb-4">
+Code reviews are among the most important aspect of professional software development. We spend large portions of our time doing code reviews. Because they are one of the most effective forms of ensuring cohesiveness and incrementally staying up to the date with the state of a project and system.
 
-  
-    <article id="post-2019-08-17-source-sdk-linux" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2019/08/17/2019-08-17-source-sdk-linux/" class="article-date">
-  <time datetime="2019-08-17T04:00:00.000Z" itemprop="datePublished">2019-08-17</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2019/08/17/2019-08-17-source-sdk-linux/">Compiling Source SDK on Linux</a>
-    </h1>
-  
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2016-04-25-npm-scoped-packages">Scoped Packages with npm-link</a></h3><div class="text-lg mb-4"><time dateTime="2016-04-25">April	25, 2016</time></div><p class="text-lg leading-relaxed mb-4">
+In the past few months, I have noticed that `npm link` and scoped packages have gone underused by my colleagues.
+The `npm link` command is essential for quick development. And if you're building private packages inside an organization, scoped packages can make managing and installing packages much simpler.
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>The <a href="https://en.wikipedia.org/wiki/Source_\(game_engine\" target="_blank" rel="noopener">Source SDK</a>#Source_SDK) is a fork of Valve’s internal <a href="https://en.wikipedia.org/wiki/Perforce" target="_blank" rel="noopener">Perforce</a> repository containing the application code they use to build Valve’s games based on the Source 1 engine. Games such as <a href="https://en.wikipedia.org/wiki/Counter-Strike:_Source" target="_blank" rel="noopener">Counter Strike: Source</a>, <a href="https://en.wikipedia.org/wiki/Team_Fortress_2" target="_blank" rel="noopener">Team Fortress 2</a> and <a href="https://en.wikipedia.org/wiki/Half-Life_2" target="_blank" rel="noopener">Half-Life 2</a>.</p>
-<p>The SDK <a href="https://github.com/ValveSoftware/source-sdk-2013/" target="_blank" rel="noopener">available on Github</a> is primarily based on <a href="https://en.wikipedia.org/wiki/Half-Life_2" target="_blank" rel="noopener">Half-life 2</a>, while other games are removed from the repository before they are exported to Github.</p>
-<p>Link to Github: <a href="https://github.com/ValveSoftware/source-sdk-2013/" target="_blank" rel="noopener">https://github.com/ValveSoftware/source-sdk-2013/</a></p>
-<p>The Source SDK is comprised of multiple projects that are shared libraries which are referenced by a proprietary engine created by Valve. The Engine and some of its surrounding tools are not open source and while source code can be found on the internet, usage is not legal and is covered under both copyright and DMCA.</p>
-<p>The <a href="https://github.com/ValveSoftware/source-sdk-2013/blob/master/LICENSE" target="_blank" rel="noopener">Valve Source SDK license</a> makes it clear that the shared libraries are the property of Valve and while they may be freely used, there are some limitations that make them different from typical GPL and BSD licenses that we have become accustomed to. Namely that the application created cannot be used for commercial purposes.</p>
-<h3 id="Why-would-you-want-to-use-the-Source-SDK"><a href="#Why-would-you-want-to-use-the-Source-SDK" class="headerlink" title="Why would you want to use the Source SDK?"></a>Why would you want to use the Source SDK?</h3><p>The Source SDK is rather interesting, because there quite a few successful commercial games based on the platform. The platform is rather rich in features, though it may not be the most intuitive platform to use. The tooling and artwork pipeline lacks in areas that make it difficult for an artist to use. The artistic pipeline is primarily centered around proprietary file formats designed specifically for the Source Engine and command-line utilities that must be used to cover files between supported non-commercial formats and Valve’s proprietary Source Engine formats.</p>
-<p>Overall, the Source SDK can be interesting, because it is based on Half-life 2 and contains a fully featured version of Half-life 2 within it. This can give a basis for building a prototype or game top of the existing Half-life 2 series without needing to create everything from scratch. Of course Source is used to create many other games and contains abstractions that make it easy to move away from the look and feel of Half-life. Adding player functionality, weapons and game entities is completely within the scope of creating a game based on the Source SDK.</p>
-<h3 id="Compiling-on-Linux"><a href="#Compiling-on-Linux" class="headerlink" title="Compiling on Linux"></a>Compiling on Linux</h3><p>Now, because much of the Source SDK and the engine are proprietary. There is not much of a booming open source community as one would expect with some of this caliber of quality. Namely, because of a lack of updates, communication and being partially limited due its proprietary nature.</p>
-<p>The Source Engine and SDK support Windows, macOS and Linux, but due to its closed sourced libraries compilation can be rather tricky. In this post I will show the easiest way to get started compiling the Source SDK on Linux.</p>
-<p>The easiest way to compile the Source SDK on Linux is to use <a href="https://www.docker.com" target="_blank" rel="noopener">Docker</a> and an image of <a href="http://releases.ubuntu.com/14.04/" target="_blank" rel="noopener">Ubuntu 14.04</a>. The reasoning is because the proprietary libraries that the SDK must be linked against were built using the shared libraries and version of GCC found in Ubuntu 14.04.</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> ~</span><br><span class="line">git <span class="built_in">clone</span> git@github.com:ValveSoftware/<span class="built_in">source</span>-sdk-2013.git</span><br><span class="line"></span><br><span class="line">sudo docker run -t -i -v $(<span class="built_in">pwd</span>):$(<span class="built_in">pwd</span>) ubuntu:14.04 /bin/bash</span><br><span class="line">sudo apt-get update &amp;&amp; sudo apt-get install -y gcc-multilib g++-multilib build-essential rsync</span><br><span class="line"></span><br><span class="line"><span class="comment"># In docker instance</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Change to the directory of the source-sdk-2013</span></span><br><span class="line"><span class="built_in">cd</span> &lt;folder&gt;/mp/src</span><br><span class="line"></span><br><span class="line"><span class="comment"># Create the Makefiles required for compilation</span></span><br><span class="line">./createallprojects</span><br><span class="line"></span><br><span class="line"><span class="comment"># Compile the mod by running Make</span></span><br><span class="line">make -f everything.mak</span><br><span class="line"></span><br><span class="line"><span class="comment"># Copy the binary files to your mod folder</span></span><br><span class="line">rsync --progress -v ../game/mod_hl2mp/bin/* &lt;path-to-home&gt;/.steam/steam/steamapps/sourcemods/my-source-mod/bin/</span><br></pre></td></tr></table></figure>
-<h3 id="Other-Tooling-on-Linux"><a href="#Other-Tooling-on-Linux" class="headerlink" title="Other Tooling on Linux"></a>Other Tooling on Linux</h3><p>Much of the Source SDK tooling is created for Windows only and does not execute on macOS or Linux. The solution is rather typical. Use Wine which supports most Source SDK tools rather reliably.</p>
-<p>For model editing, the native version of <a href="https://www.blender.org/download/" target="_blank" rel="noopener">Blender 2.8x</a> can <a href="https://developer.valvesoftware.com/wiki/Blender_Source_Tools" target="_blank" rel="noopener">be used</a> with the <a href="http://steamreview.org/BlenderSourceTools/" target="_blank" rel="noopener">Blender Source Tools</a>.</p>
-<p>For mapping the included <a href="https://developer.valvesoftware.com/wiki/Valve_Hammer_Editor" target="_blank" rel="noopener">Hammer</a> can be used] by installing the <a href="https://developer.valvesoftware.com/wiki/Source_SDK_2013" target="_blank" rel="noopener">Source Base 2013 Single Player</a> installed with the Windows compatibility layer. Launch <code>Hammer.exe</code> using wine from the bin directory.</p>
-<p>For texture compilation, the <a href>tga2vtf.exe</a> command-line application can be used via Wine.</p>
-<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>Using the Source SDK on Linux is feasible, although rather time consuming and sometimes unintuitive. It is more difficult to extend the platform due to the closed source nature. Had the Engine and SDK been fully open source and developed as an open source project in tandem with the surrounding community there would be a remarkable improvement in productivity and community support. Hopefully future versions of the Source 2 Engine will be developed directly on Github with developers allowing for complete open usage of their game engine.</p>
-<p>Never the less, anyone interested in game development should take a look at the Source SDK if only for a view into how commercial games were developed in past. The Source SDK is a piece of history in game engine and tool development that has many lessons to offer.</p>
+Before we can do anything, we need a scoped package. Fortunately, it's as simple as naming the package in the following format: `@<scope>/<package>`.
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://hekar.github.io/blog/2019/08/17/2019-08-17-source-sdk-linux/" data-id="cjzoo22mj0000wcuyyofmb6vr" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2015-05-21-opensuse-lenovo-t520">Thinkpad T520 - OpenSUSE 13.2</a></h3><div class="text-lg mb-4"><time dateTime="2015-05-21">May	21, 2015</time></div><p class="text-lg leading-relaxed mb-4">
+Getting a Thinkpad T520’s NVIDIA Quadro video card working with OpenSUSE 13.2 or other modern distributions does not have to be the hard.
 
+Many modern laptops only support video output (DVI, HDMI, Display Port) on the dedicated GPU. Fortunately, on the T520, we can easily configure Linux to use the NVIDIA video card as the primary card. Avoiding any screen tearing or other issues you're traditionally notice from the video output being copied between the integrated and dedicated graphics processors.
 
-  
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2013-11-24-zero-k-lobby-linux">Building Zero-K Lobby on Linux</a></h3><div class="text-lg mb-4"><time dateTime="2013-11-24">November	24, 2013</time></div><p class="text-lg leading-relaxed mb-4">
+Though, I am no longer an avid video game player I happened to come across a real-time strategy game a few months ago. The game is called Zero-K, is freely avaliable and open source. While the game runs very well under Windows, I have experienced quite a few issues under Linux.
 
+Recently, the game had stopped working altogether and I had been unsure of why.
 
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/blog/page/2/">2</a><a class="page-number" href="/blog/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/blog/page/6/">6</a><a class="extend next" rel="next" href="/blog/page/2/">Next &raquo;</a>
-  </nav>
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2013-10-25-scala-test-eclipse">ScalaTest Eclipse</a></h3><div class="text-lg mb-4"><time dateTime="2013-10-25">October	25, 2013</time></div><p class="text-lg leading-relaxed mb-4">
+I tried the ScalaTest plugin Eclipse, but I couldn't get them working with my version of ScalaTest. Fortunately, there's an alternative: JUnit runners.
 
-</section>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2019 Hekar Khani<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/blog/" class="mobile-nav-link">Home</a>
-  
-    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2013-10-07-project-lombok">Project Lombok</a></h3><div class="text-lg mb-4"><time dateTime="2013-10-07">October	7, 2013</time></div><p class="text-lg leading-relaxed mb-4">
+I happened to come across http://projectlombok.org/, which is a library that adds many C#, among other features to Java. Included are "properties", the "using" statement, "structs", immutable structures, checked to uncheck exceptions, delegation, basic type inference, etc. These features are utilized via annotations and implemented as modifications to javac.
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2013-08-12-what-does-this-code-do">What does this code do?</a></h3><div class="text-lg mb-4"><time dateTime="2013-08-12">August	12, 2013</time></div><p class="text-lg leading-relaxed mb-4">
+Since learning Scala and Kotlin, I've been wondering why much of the code written in Kotlin and Scala has been easier to read than its respective Java equivalent.
 
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2013-07-30-linux-mass-market">Linux Complaints and Mass Market</a></h3><div class="text-lg mb-4"><time dateTime="2013-07-30">July	30, 2013</time></div><p class="text-lg leading-relaxed mb-4">
+Linux users complain a lot about their desktop environments. Gnome, KDE, Xfce, LXDE etc. But that's not nearly the biggest issue on the Linux desktop.
 
+The biggest issue is the complexity of packaging software and the shear work required to create a distribution.
 
-<script src="/blog/js/script.js"></script>
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2012-10-28-windows-8-review">Windows 8 Review</a></h3><div class="text-lg mb-4"><time dateTime="2012-10-28">October	28, 2012</time></div><p class="text-lg leading-relaxed mb-4">
+Been using Windows 8 for a little over 3 weeks now.
 
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2012-06-25-scala-intellij">Play 2.0 with Intellij</a></h3><div class="text-lg mb-4"><time dateTime="2012-06-25">June	25, 2012</time></div><p class="text-lg leading-relaxed mb-4">
+After upgrading to Windows 8, I noticed some stability issues with Eclipse Juno. Many of the problems made Juno completely unusable on my installation.
 
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2012-06-13-linux-desktop-package-managers">The Linux Desktop and Package Managers</a></h3><div class="text-lg mb-4"><time dateTime="2012-06-13">June	13, 2012</time></div><p class="text-lg leading-relaxed mb-4">
+Server based Linux distributions are extraordinary. They're relatively secure, performant, reliable, fault tolerant and support a large variety of applications. Features of the operating systems make sense for large scale deployments. Everything from the setup of the file system to the way services are handled makes sense for a server. Organizations rarely realize limitations with their Linux distributions. They receive powerful and malleable operating systems that suite the needs of modern network service based architectures.
 
-  </div>
-</body>
-</html>
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div><div><h3 class="text-3xl mb-3 leading-snug"><a class="hover:underline" href="/posts/2012-01-12-python-yield-keyword">Python&#x27;s Yield Keyword</a></h3><div class="text-lg mb-4"><time dateTime="2012-01-12">January	12, 2012</time></div><p class="text-lg leading-relaxed mb-4">
+One of my most missed features in Java is the yield keyword found in Python.
+
+Instead of processing an entire a collection and returning it. The yield keyword, will automatically create a lazily loaded iterable out of a function. This removes a ton of boilerplate that one would otherwise need to create an iterable.
+
+</p><div class="flex items-center"><div class="text-xl font-bold">Hekar Khani</div></div></div></div></section></div></div></main></div><footer class="bg-accent-1 border-t border-accent-2"><div class="container mx-auto px-5"></div></footer></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"allPosts":[{"title":"Dotcover in Dotnet Core","date":"2020-09-22","slug":"2020-09-22-dotcover-dotnetcore","excerpt":"\nCode coverage can be a useful heuristic for determining whether code is adequately executed by a given set of unit tests.\n\nTooling that produces code coverage will never be able to inform you how well your assertions are executed or if the given execution is necessary, but they will you an about whether a portion of code is covered by tests at all.\n\n"},{"title":"Coding is writing","date":"2020-09-19","slug":"2020-09-19-coding-is-writing","excerpt":"\nRecently a friend asked what I do for a living. For the longest time I'd had difficulty answering this question. Somehow in that moment I realized we're similar to writers.\n\n"},{"title":"Stop Distro Hopping","date":"2019-08-30","slug":"2019-08-30-stop-distro-hopping","excerpt":"\nFrom 2005 to 2017, I hadn't been able to stick to a single installation of any Linux Desktop Distribution. Whether it was Mandrake, Debian, Slackware, Ubuntu, Fedora, SUSE, Mepis or any of the many Linux distributions I switched between. Even Windows would periodically be installed onto one of many computers.\n\nIt took until 2017 for me to settle. On OpenSUSE Tumbleweed. Why did it take so long? I would argue that it was not entirely my fault. That most Linux distributions were not stable enough. Until recently there'd been the promise of an easy to use, yet stable and up to date distribution that'd never came to fruition.\n\n"},{"title":"Electron, Vue.js and Vuetify Guide","date":"2019-08-23","slug":"2019-08-23-electron-vue","excerpt":"\nThis post is a quick tutorial on how to create an electron-vue] application with the vuetify library. The resulting application will bundles into Windows, macOS and Linux binaries.\n\n"},{"title":"Compiling Source SDK on Linux","date":"2019-08-17","slug":"2019-08-17-source-sdk-linux","excerpt":"\nThe Source SDK is a fork of Valve's internal Perforce repository containing the application code they use to build Valve's games based on the Source 1 engine. Games such as Counter Strike: Source, Team Fortress 2 and Half-Life 2.\n\n"},{"title":"QCon - No Moore Left to Give","date":"2019-08-14","slug":"2019-08-14-qcon-no-moore","excerpt":"\nBryan Cantrill is one of my favorite presenters, so I was excited to see that he'd be giving a keynote at QCon. For a long time, computer enthuasaists have been talking about the end of Moore's law and what it means for computing. What Cantrill explains is that Moore's law is close to ending, it's not the end of the world, but developers aren't going to get the \"free\" performance increases we've seen in the past.\n\n"},{"title":"Quality Code Reviews","date":"2016-09-23","slug":"2016-09-23-quality-code-reviews","excerpt":"\nCode reviews are among the most important aspect of professional software development. We spend large portions of our time doing code reviews. Because they are one of the most effective forms of ensuring cohesiveness and incrementally staying up to the date with the state of a project and system.\n\n"},{"title":"Scoped Packages with npm-link","date":"2016-04-25","slug":"2016-04-25-npm-scoped-packages","excerpt":"\nIn the past few months, I have noticed that `npm link` and scoped packages have gone underused by my colleagues.\nThe `npm link` command is essential for quick development. And if you're building private packages inside an organization, scoped packages can make managing and installing packages much simpler.\n\nBefore we can do anything, we need a scoped package. Fortunately, it's as simple as naming the package in the following format: `@\u003cscope\u003e/\u003cpackage\u003e`.\n\n"},{"title":"Thinkpad T520 - OpenSUSE 13.2","date":"2015-05-21","slug":"2015-05-21-opensuse-lenovo-t520","excerpt":"\nGetting a Thinkpad T520’s NVIDIA Quadro video card working with OpenSUSE 13.2 or other modern distributions does not have to be the hard.\n\nMany modern laptops only support video output (DVI, HDMI, Display Port) on the dedicated GPU. Fortunately, on the T520, we can easily configure Linux to use the NVIDIA video card as the primary card. Avoiding any screen tearing or other issues you're traditionally notice from the video output being copied between the integrated and dedicated graphics processors.\n\n"},{"title":"Building Zero-K Lobby on Linux","date":"2013-11-24","slug":"2013-11-24-zero-k-lobby-linux","excerpt":"\nThough, I am no longer an avid video game player I happened to come across a real-time strategy game a few months ago. The game is called Zero-K, is freely avaliable and open source. While the game runs very well under Windows, I have experienced quite a few issues under Linux.\n\nRecently, the game had stopped working altogether and I had been unsure of why.\n\n"},{"title":"ScalaTest Eclipse","date":"2013-10-25","slug":"2013-10-25-scala-test-eclipse","excerpt":"\nI tried the ScalaTest plugin Eclipse, but I couldn't get them working with my version of ScalaTest. Fortunately, there's an alternative: JUnit runners.\n\n"},{"title":"Project Lombok","date":"2013-10-07","slug":"2013-10-07-project-lombok","excerpt":"\nI happened to come across http://projectlombok.org/, which is a library that adds many C#, among other features to Java. Included are \"properties\", the \"using\" statement, \"structs\", immutable structures, checked to uncheck exceptions, delegation, basic type inference, etc. These features are utilized via annotations and implemented as modifications to javac.\n\n"},{"title":"What does this code do?","date":"2013-08-12","slug":"2013-08-12-what-does-this-code-do","excerpt":"\nSince learning Scala and Kotlin, I've been wondering why much of the code written in Kotlin and Scala has been easier to read than its respective Java equivalent.\n\n"},{"title":"Linux Complaints and Mass Market","date":"2013-07-30","slug":"2013-07-30-linux-mass-market","excerpt":"\nLinux users complain a lot about their desktop environments. Gnome, KDE, Xfce, LXDE etc. But that's not nearly the biggest issue on the Linux desktop.\n\nThe biggest issue is the complexity of packaging software and the shear work required to create a distribution.\n\n"},{"title":"Windows 8 Review","date":"2012-10-28","slug":"2012-10-28-windows-8-review","excerpt":"\nBeen using Windows 8 for a little over 3 weeks now.\n\n"},{"title":"Play 2.0 with Intellij","date":"2012-06-25","slug":"2012-06-25-scala-intellij","excerpt":"\nAfter upgrading to Windows 8, I noticed some stability issues with Eclipse Juno. Many of the problems made Juno completely unusable on my installation.\n\n"},{"title":"The Linux Desktop and Package Managers","date":"2012-06-13","slug":"2012-06-13-linux-desktop-package-managers","excerpt":"\nServer based Linux distributions are extraordinary. They're relatively secure, performant, reliable, fault tolerant and support a large variety of applications. Features of the operating systems make sense for large scale deployments. Everything from the setup of the file system to the way services are handled makes sense for a server. Organizations rarely realize limitations with their Linux distributions. They receive powerful and malleable operating systems that suite the needs of modern network service based architectures.\n\n"},{"title":"Python's Yield Keyword","date":"2012-01-12","slug":"2012-01-12-python-yield-keyword","excerpt":"\nOne of my most missed features in Java is the yield keyword found in Python.\n\nInstead of processing an entire a collection and returning it. The yield keyword, will automatically create a lazily loaded iterable out of a function. This removes a ton of boilerplate that one would otherwise need to create an iterable.\n\n"}]},"__N_SSG":true},"page":"/","query":{},"buildId":"qGnw3xHm5KuW5pKXUjxGD","isFallback":false,"gsp":true}</script><script nomodule="" src="/_next/static/chunks/polyfills-8683bd742a84c1edd48c.js"></script><script src="/_next/static/chunks/webpack-d9b892422ee32762e120.js" async=""></script><script src="/_next/static/chunks/framework-45e9b849801d11e9c054.js" async=""></script><script src="/_next/static/chunks/commons-e1087fd52b866fc516e6.js" async=""></script><script src="/_next/static/chunks/main-5d758df2dffcf497d56f.js" async=""></script><script src="/_next/static/chunks/pages/_app-841f7939ab4d644b6735.js" async=""></script><script src="/_next/static/chunks/853-d37cfdc4604a543e18de.js" async=""></script><script src="/_next/static/chunks/pages/index-49135e51c04ae5e455c9.js" async=""></script><script src="/_next/static/qGnw3xHm5KuW5pKXUjxGD/_buildManifest.js" async=""></script><script src="/_next/static/qGnw3xHm5KuW5pKXUjxGD/_ssgManifest.js" async=""></script></body></html>
