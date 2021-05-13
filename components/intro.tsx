@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import React from 'react'
 
 const Intro = () => {
   return (
@@ -13,7 +13,7 @@ const Intro = () => {
       </div>
       <div className="text-right pr-4 md:pr-8">
         <a href="https://github.com/hekar">
-          <Image src="/GitHub-Mark-32px.png" layout="fixed" width={32} height={32} />
+          <img src={require('../public/GitHub-Mark-32px.png')} width={32} height={32} />
         </a>
       </div>
     </section>
