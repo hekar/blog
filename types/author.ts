@@ -1,6 +1,9 @@
-type Author = {
-  name: string;
-  picture: string;
-} | string | undefined;
+type Author =
+  | {
+      name: string;
+      picture: string;
+    }
+  | string
+  | undefined;
 
 export default Author;

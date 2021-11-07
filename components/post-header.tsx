@@ -22,7 +22,7 @@ const PostHeader = ({ title, coverImage, date, author }: Props) => {
           </div>
         ) : undefined}
         <div className="block mb-6">
-          <Avatar author={author ?? 'Hekar Khani'} />
+          <Avatar author={author ?? "Hekar Khani"} />
         </div>
         <div className="mb-6 text-lg">
           <DateFormatter dateString={date} />

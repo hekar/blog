@@ -16,7 +16,7 @@ const Index = ({ allPosts }: Props) => {
     <>
       <Layout>
         <Head>
-          <title>Hekar's Log | Random Posts</title>
+          <title>Mov Log | Random Posts</title>
         </Head>
         <Container>
           <div className="divide-y-4 divide-black-600 divide-solid">

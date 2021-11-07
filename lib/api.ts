@@ -27,7 +27,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     } else if (field === "content") {
       items[field] = content;
     } else if (field === "excerpt") {
-      items[field] = (excerpt ?? data[field] ?? '');
+      items[field] = excerpt ?? data[field] ?? "";
     } else if (data[field]) {
       items[field] = data[field];
     }
