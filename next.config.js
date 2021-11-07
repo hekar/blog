@@ -1,7 +1,8 @@
-const withOptimizedImages = require('next-optimized-images');
-
 const ghPages = process.env.DEPLOY_TARGET === 'gh-pages';
 
-module.exports = withOptimizedImages({
+module.exports = {
   basePath: ghPages ? '/blog' : '',
-});
+  images: {
+    loader: 'custom',
+  },
+};

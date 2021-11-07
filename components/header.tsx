@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
+import backPic from '../public/back.png'
 
 const Header = () => {
   const router = useRouter();
@@ -17,8 +18,9 @@ const Header = () => {
         onClick={() => router.back()}
       >
         <Image
+          unoptimized
           className="align-middle pt-4"
-          src="back.png"
+          src={backPic}
           width={16}
           height={16}
         />{" "}

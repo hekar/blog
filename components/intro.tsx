@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import githubPic from '../public/GitHub-Mark-32px.png'
 
 const Intro = () => {
   return (
@@ -15,7 +16,8 @@ const Intro = () => {
       <div className="text-right pr-4 md:pr-8">
         <a href="https://github.com/hekar">
           <Image
-            src="GitHub-Mark-32px.png"
+            unoptimized
+            src={githubPic}
             width={32}
             height={32}
           />
