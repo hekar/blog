@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React, { Fragment } from "react";
 
 type Author =
@@ -19,7 +20,7 @@ const Avatar = ({ author }: Props): JSX.Element => {
     </div>
   ) : author ? (
     <div className="flex items-center">
-      <img
+      <Image
         src={author.picture}
         className="w-12 h-12 rounded-full mr-4"
         alt={author.name}

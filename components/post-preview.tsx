@@ -22,7 +22,7 @@ const PostPreview = ({
   slug,
 }: Props) => {
   return (
-    <Link as={`/posts/${slug}`} href="/posts/[slug]" prefetch shallow>
+    <Link as={`/posts/${slug}`} href="/posts/[slug]" shallow>
       <a className="focus:bg-blue-100 hover:bg-gray-100 p-4 rounded-xl">
         {coverImage ? (
           <div className="mb-5">
@@ -30,11 +30,7 @@ const PostPreview = ({
           </div>
         ) : undefined}
         <h3 className="text-3xl mb-3 leading-snug">
-          <Link as={`/posts/${slug}`} href="/posts/[slug]">
-            <a className="hover:underline" tabIndex={-1}>
-              {title}
-            </a>
-          </Link>
+          {title}
         </h3>
         <div className="text-lg mb-4">
           <DateFormatter dateString={date} />

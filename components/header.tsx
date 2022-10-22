@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
-import backPic from '../public/back.png'
+import backPic from "../public/back.png";
 
 const Header = () => {
   const router = useRouter();
