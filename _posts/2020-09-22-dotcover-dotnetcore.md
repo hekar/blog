@@ -20,7 +20,7 @@ If you do not have an existing project, you can create one use the templates pro
 
 These commands below will create a project, test project and solution file. The test project will reference the project and the solution file will contain both the projects.
 
-```
+```sh
 mkdir project
 cd project
 dotnet new console --name ConsoleApp
@@ -36,19 +36,23 @@ dotnet sln add ConsoleApp ConsoleApp.Tests
 
 To reference Dotcover in the unit test project, open `./ConsoleApp.Tests/ConsoleApp.Tests.csproj` in a text editor. Add the following:
 
-```
+```xml
   <ItemGroup>
     <DotNetCliToolReference Include="JetBrains.dotCover.DotNetCliTool" Version="2020.2.3" />
   </ItemGroup>
 ```
 
-run `dotnet restore`
+run
+
+```sh
+dotnet restore
+```
 
 ## Run dotcover
 
 The default dotcover configuration outputs a `.dcvr` file.
 
-```
+```sh
 dotnet dotcover test
 ```
 
@@ -56,7 +60,7 @@ dotnet dotcover test
 
 This step is entirely optional, but you can create a file for dotcover configuration.
 
-```
+```sh
 dotnet dotcover test --dotCoverXml=dotcover.xml
 ```
 

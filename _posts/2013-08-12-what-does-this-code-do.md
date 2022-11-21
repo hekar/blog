@@ -17,7 +17,7 @@ But don't we have the same expressiveness with English. One of the most complica
 
 What does this Java code do? The answer is _nothing_. And it doesn't even fit on a page.
 
-```
+```java
 package com.example.bean;
 
 import java.util.Date;

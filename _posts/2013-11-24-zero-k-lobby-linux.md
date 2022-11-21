@@ -19,13 +19,13 @@ The Lobby is written in C# and has some issues building on Mono, but there are s
 
 `zero-k/other/.nugut/NuGet.targets` line 54:
 
-```
+```powershell
   $(NuGetCommand) install "$(PackagesConfig)" -source "$(PackageSources)"  $(NonInteractiveSwitch) $(RequireConsentSwitch) -solutionDir "$(SolutionDir) "
 ```
 
 Should instead be
 
-```
+```powershell
   $(NuGetCommand) install "$(PackagesConfig)" -source "$(PackageSources)"  $(NonInteractiveSwitch) $(RequireConsentSwitch) -solutionDir "$(SolutionDir)"
 ```
 
@@ -33,7 +33,7 @@ Thereby removing the space after `$(SolutionDir)`. This was causing packages to 
 
 Afterwards, it should fail due to case sensitive file resolution on Linux. The solution is to disable case sensitivity with Mono builds:
 
-```
+```sh
   export MONO_IOMAP=all
 ```
 

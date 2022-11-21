@@ -29,7 +29,7 @@ https://en.opensuse.org/SDB:NVIDIA_drivers#The_repository_way
 
 Installing the NVIDIA driver is pretty simple. Do not reboot until you have fully configured OpenSuse.
 
-```
+```sh
 zypper ar -f ftp://download.nvidia.com/opensuse/13.2/ nvidia
 sudo zypper in x11-video-nvidiaG04
 ```
@@ -38,14 +38,14 @@ sudo zypper in x11-video-nvidiaG04
 
 Append `blacklist i915` and `blacklist nouveau` to "/etc/modprobe.d/50-blacklist.conf":
 
-```
+```sh
 blacklist i915
 blacklist nouveau
 ```
 
 ### Commands
 
-```
+```sh
 echo 'blacklist i915' | sudo tee  --append /etc/modprobe.d/50-blacklist.conf
 echo 'blacklist nouveau' | sudo tee  --append /etc/modprobe.d/50-blacklist.conf
 ```
@@ -54,25 +54,25 @@ echo 'blacklist nouveau' | sudo tee  --append /etc/modprobe.d/50-blacklist.conf
 
 Edit /etc/default/grub
 
-```
+```sh
 sudo vim /etc/default/grub
 ```
 
 Change
 
-```
+```sh
 GRUB_CMDLINE_LINUX_DEFAULT=" BOOT_IMAGE=/boot/x86_64/loader/linux ramdisk_size=512000 ramdisk_blocksize=4096 resume=/dev/sda2"
 ```
 
 To look like (append `acpi_osi=Linux nomodeset` to `GRUB_CMDLINE_LINUX_DEFAULT`):
 
-```
+```sh
 GRUB_CMDLINE_LINUX_DEFAULT=" BOOT_IMAGE=/boot/x86_64/loader/linux ramdisk_size=512000 ramdisk_blocksize=4096 resume=/dev/sda2 acpi_osi=Linux nomodeset"
 ```
 
 Afterwards run:
 
-```
+```sh
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 

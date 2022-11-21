@@ -11,11 +11,11 @@ Disclaimer: The included version of [electron] with [electron-vue][electron-vue-
 
 If you want to skip the tutorial and simply download the template, it can be found here: https://github.com/hekar/electron-vue-starter
 
-##### Install dependencies
+### Dependencies
 
 Install [vue-cli] and [electron-vue] to get started
 
-```
+```sh
 npm install -g vue-cli
 vue init simulatedgreg/electron-vue electron-vue-starter
 
@@ -24,7 +24,7 @@ cd electron-vue-starter
 yarn install
 ```
 
-##### Install Vuetify
+### Vuetify
 
 Add the dependency for vuetify 2.x and material design fonts
 
@@ -49,7 +49,7 @@ const vue = new Vue({
 })
 ```
 
-##### Configure Vuetify theme
+### Vuetify theme
 
 Default to the light theme by disabling dark mode
 
@@ -64,7 +64,7 @@ export default {
 };
 ```
 
-##### Whitelist Vuetify
+### Whitelist Vuetify
 
 This is the easiest step to overlook. Add `vuetify` to the `whiteListedModules` list, so that it will be included in the webpack bundle.
 
@@ -74,7 +74,7 @@ Edit `.electron-vue/webpack.renderer.config.js`
 let whiteListedModules = ["vue", "vuetify"];
 ```
 
-##### Start the electron app
+### Start
 
 ```
 yarn run dev
@@ -82,7 +82,7 @@ yarn run dev
 
 Debug using port 5858 in Google Chrome or Node Inspector for the server side portion of the application or press `Shift + Ctrl + I` for internal devtools in Electron for editing the web rendering portion.
 
-##### Create your first view
+### First view
 
 Edit `src/renderer/components/LandingPage.vue`
 
@@ -106,9 +106,9 @@ With
 </div>
 ```
 
-##### Package the electron app
+### Package
 
-```
+```sh
 yarn run build
 ```
 

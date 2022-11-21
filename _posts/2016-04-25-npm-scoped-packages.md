@@ -25,7 +25,7 @@ Sometimes you want to make changes to a dependency while working on an applicati
 
 The synopsis from the `npm` documentation states that the npm link command only takes a single argument. The name of the [scoped] package.
 
-```
+```tt
 npm link (in package dir)
 npm link [<@scope>/]<pkg>[@<version>]
 

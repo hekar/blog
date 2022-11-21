@@ -34,6 +34,10 @@ const Post = ({ post, morePosts, preview }: Props) => {
               <Head>
                 <title>{post.title} | Mov Log</title>
                 <meta property="og:image" content={post.ogImage?.url ?? ""} />
+                <link
+                  rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/github.min.css"
+                />
               </Head>
               <PostHeader
                 title={post.title}

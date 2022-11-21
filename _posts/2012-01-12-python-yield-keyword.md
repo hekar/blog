@@ -13,9 +13,39 @@ Instead of processing an entire a collection and returning it. The yield keyword
 
 The stack is saved and all the local state is the same, but the function does not need to process everything before it allows the for loop to continue. Instead, only the next value needs to be calculated.
 
+<h2>hello</h2>
+<table>
+<tr>
+<th> Good </th>
+<th> Bad </th>
+</tr>
+<tr>
+<td>
+
+```c++
+int foo() {
+    int result = 4;
+    return result;
+}
+```
+
+</td>
+<td>
+
+```c++
+int foo() { 
+    int x = 4;
+    return x;
+}
+```
+
+</td>
+</tr>
+</table>
+
 Example:
 
-```
+```python
 def fun():
   for i in range(0, 50000):
     print(i)
@@ -27,21 +57,21 @@ for number in fun():
 
 This would print:
 
-```
+```python
 1
 1
 2
 2
 3
 3
-...etc
+# ...etc
 ```
 
 That is because we're basically calculating the value as we move on to process the next value.
 
 Without using yield, one would do something like:
 
-```
+```python
 def not_fun();
   results = []
   for i in range(0, 50000):
@@ -55,7 +85,7 @@ for number in not_fun():
 
 This would print:
 
-```
+```python
 1
 2
 3

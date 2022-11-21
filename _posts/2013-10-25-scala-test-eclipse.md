@@ -13,7 +13,7 @@ Found the [perfect tutorial](http://www.valleyprogramming.com/blog/running-scala
 
 Here's an example:
 
-```
+```java
 import org.junit.runner._
 import org.scalatest._
 import org.scalatest.junit._
