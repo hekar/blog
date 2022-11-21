@@ -19,13 +19,13 @@ The Lobby is written in C# and has some issues building on Mono, but there are s
 
 `zero-k/other/.nugut/NuGet.targets` line 54:
 
-```powershell
+```sh
   $(NuGetCommand) install "$(PackagesConfig)" -source "$(PackageSources)"  $(NonInteractiveSwitch) $(RequireConsentSwitch) -solutionDir "$(SolutionDir) "
 ```
 
 Should instead be
 
-```powershell
+```sh
   $(NuGetCommand) install "$(PackagesConfig)" -source "$(PackageSources)"  $(NonInteractiveSwitch) $(RequireConsentSwitch) -solutionDir "$(SolutionDir)"
 ```
 
