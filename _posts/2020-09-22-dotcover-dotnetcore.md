@@ -8,7 +8,7 @@ Code coverage can be a useful heuristic for determining whether code is adequate
 
 Tooling that produces code coverage will never be able to inform you how well your assertions specified, but they will give adequate information an about whether a portion of code is executed.
 
-There are numerous code coverage tools available for C#. One of them is by [Jetbrains] called [Dotcover]. 
+There are numerous code coverage tools available for C#. One of them by Jetbrains and is called Dotcover. 
 
 ---
 
