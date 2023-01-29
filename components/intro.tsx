@@ -7,10 +7,10 @@ const Intro = () => {
     <section className="flex-col md:flex-row flex md:items-center md:justify-between">
       <div className="mb-8">
         <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-          Mov Log
+          Mov Blog
         </h1>
         <h4 className="md:text-left text-xl mt-2 md:pl-2">
-          Mov patterns masquerading as complex systems
+          Mov instructions building complete systems
         </h4>
       </div>
       <div className="text-right pr-4 md:pr-8">

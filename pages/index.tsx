@@ -16,7 +16,7 @@ const Index = ({ allPosts }: Props) => {
     <>
       <Layout>
         <Head>
-          <title>Mov Log</title>
+          <title>Mov Blog</title>
         </Head>
         <Container>
           <div className="divide-y-4 divide-black-600 divide-solid">

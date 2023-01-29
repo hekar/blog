@@ -34,7 +34,7 @@ const Meta = () => {
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
         name="description"
-        content={`Mov Log - Mov patterns masquerading as complex systems.`}
+        content={`Mov Blog - Mov instructions building complete systems.`}
       />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
     </Head>
