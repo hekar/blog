@@ -1,17 +1,19 @@
-import ad from '@asciidoctor/core';
 import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
+import remarkDirective from "remark-directive";
 import rehypeStringify from "rehype-stringify";
 import rehypeHighlight from "rehype-highlight";
 import { unified } from "unified";
+import { remarkGenericHtml } from "./directive";
 
-export default async function markdownToHtml(markdown: string) {
-  if (process.env.USE_REHYPE) {
+export async function convertToHtml(markdown: string) {
     const result = await unified()
       .data("settings", { fragment: true })
       .use(remarkParse)
       .use(remarkGfm)
+      .use(remarkDirective)
+      .use(remarkGenericHtml)
       .use(remarkRehype, {
         allowDangerousHtml: true,
       })
@@ -21,8 +23,4 @@ export default async function markdownToHtml(markdown: string) {
       })
       .process(markdown);
     return result.toString();
-  } else {
-    const a = ad();
-    return a.convert(markdown);
-  }
 }

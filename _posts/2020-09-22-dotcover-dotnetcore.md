@@ -8,13 +8,15 @@ Code coverage can be a useful heuristic for determining whether code is adequate
 
 Tooling that produces code coverage will never be able to inform you how well your assertions specified, but they will give adequate information an about whether a portion of code is executed.
 
-There are numerous code coverage tools available for C#. One of them by Jetbrains and is called Dotcover. 
+There are numerous code coverage tools available for C#. One of them by Jetbrains and is called Dotcover.
 
 ---
 
+:::div{.column-2}
 [Dotcover] works with [Dotnet Core][dotnet/core] applications out of the box. Configuration can be slightly difficult if using with Sonarqube, but this guide details how to change the coverage report format.
 
 [Dotcover] integrates with [MSTest], [NUnit], [xUnit], and [MSpec]. It can be executed through the [command-line] or [Visual Studio][vs].
+:::
 
 Jetbrains unfortunately requires licensing for the applications. It is a proprietary tool requiring payment for closed-source projects. Students have free access and there are discounts in other circumstances. See the [Pricing](https://www.jetbrains.com/dotcover/buy/#discounts) page for more information. One common alternative is [coverlet](https://github.com/coverlet-coverage/coverlet) which uses the preferable open-source MIT license.
 

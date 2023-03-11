@@ -1,16 +1,19 @@
 import fs from "fs";
-import { join } from "path";
+import { join, parse } from "path";
 import matter from "gray-matter";
 
 const postsDirectory = join(process.cwd(), "_posts");
 
 export function getPostSlugs() {
-  return fs.readdirSync(postsDirectory);
+  const files = fs.readdirSync(postsDirectory);
+  const filtered = files.filter((f) => f.endsWith('.md'));
+  return Array.from(filtered).sort((a, b) => a.localeCompare(b));
 }
 
 export function getPostBySlug(slug: string, fields: string[] = []) {
-  const realSlug = slug.replace(/\.md$/, "");
-  const fullPath = join(postsDirectory, `${realSlug}.md`);
+  const parsed = parse(slug);
+  const realSlug = parsed.name;
+  const fullPath = join(postsDirectory, parsed.name + '.md');
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content, excerpt } = matter(fileContents, { excerpt: true });
 
