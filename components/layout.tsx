@@ -8,7 +8,7 @@ type Props = {
 
 const Layout = ({ preview, children }: Props) => {
   return (
-    <div className="bg-gray-200 dark:bg-slate-900">
+    <div>
       <Meta />
       <div className="min-h-screen text-gray-800 dark:text-gray-50">
         <main>{children}</main>

@@ -6,6 +6,7 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
+  @apply text-slate-800;
   @apply my-6;
 }
 
@@ -15,7 +16,7 @@
 .markdown h4,
 .markdown h5,
 .markdown h6 {
-  @apply text-blue-500;
+  @apply text-indigo-900;
 }
 
 .markdown h2 {

@@ -23,7 +23,7 @@ const PostPreview = ({
 }: Props) => {
   return (
     <Link as={`/posts/${slug}`} href="/posts/[slug]" shallow>
-      <a className="focus:bg-blue-100 hover:bg-gray-100 p-4 rounded-xl">
+      <a className="focus:outline-none focus:bg-slate-100 focus:border-slate-300 hover:border-slate-200 hover:bg-blue-50 border border-transparent p-4 rounded-xl">
         {coverImage ? (
           <div className="mb-5">
             <CoverImage slug={slug} title={title} src={coverImage} />

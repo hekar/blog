@@ -9,6 +9,8 @@ module.exports = {
         success: "#0070f3",
         cyan: "#79FFE1",
       },
+      mode: "jit",
+      darkMode: "class",
       spacing: {
         28: "7rem",
       },

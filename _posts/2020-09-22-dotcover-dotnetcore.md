@@ -12,11 +12,9 @@ There are numerous code coverage tools available for C#. One of them by Jetbrain
 
 ---
 
-:::div{.column-2}
 [Dotcover] works with [Dotnet Core][dotnet/core] applications out of the box. Configuration can be slightly difficult if using with Sonarqube, but this guide details how to change the coverage report format.
 
 [Dotcover] integrates with [MSTest], [NUnit], [xUnit], and [MSpec]. It can be executed through the [command-line] or [Visual Studio][vs].
-:::
 
 Jetbrains unfortunately requires licensing for the applications. It is a proprietary tool requiring payment for closed-source projects. Students have free access and there are discounts in other circumstances. See the [Pricing](https://www.jetbrains.com/dotcover/buy/#discounts) page for more information. One common alternative is [coverlet](https://github.com/coverlet-coverage/coverlet) which uses the preferable open-source MIT license.
 

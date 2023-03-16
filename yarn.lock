@@ -3088,6 +3088,7 @@ __metadata:
     eslint-plugin-prettier: "npm:^4.2.1"
     gray-matter: "npm:4.0.3"
     next: "npm:^12.3.1"
+    next-themes: "npm:^0.2.1"
     postcss: "npm:^8.4.18"
     prettier: "npm:^2.7.1"
     react: "npm:^18.2.0"
@@ -3156,6 +3157,17 @@ __metadata:
   version: 0.6.3
   resolution: "negotiator@npm:0.6.3"
   checksum: d8e3b42d99638b1f363ce114c98e6906ade395c230058e50644417bd398b01381133dbca4bc49f30f6b1c93254e4b5a2d50cc47adcdabf2a8476b6f16311ad5d
+  languageName: node
+  linkType: hard
+
+"next-themes@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "next-themes@npm:0.2.1"
+  peerDependencies:
+    next: "*"
+    react: "*"
+    react-dom: "*"
+  checksum: 1bf6c956a3daba1fd4ff6f7a7c13735b1ef0c72f4caafb5a3128fd35cccca9048b38961195e52512e6e66dcba5558a59bd82791102f9548a244b3f2954a2b543
   languageName: node
   linkType: hard
 
